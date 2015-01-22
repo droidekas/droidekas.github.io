@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>droidekas.github.io/</loc>
-    <lastmod>2015-01-22T12:37:44+05:30</lastmod>
+    <lastmod>2015-01-22T13:46:55+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -10,7 +10,33 @@
     <url>
       <loc>droidekas.github.io/posting-nothing-is-easy.html</loc>
       
-        <lastmod>2015-01-21T00:00:00+05:30</lastmod>
+        <lastmod>2015-01-22T00:00:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>droidekas.github.io/jekyll/welcome-to-jekyll.html</loc>
+      
+        <lastmod>2014-03-03T00:00:00+05:30</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>droidekas.github.io/jekyll/poole/introducing-poole.html</loc>
+      
+        <lastmod>2014-03-02T00:00:00+05:30</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -24,7 +50,7 @@
   <url>
     <loc>droidekas.github.io/404.html</loc>
     
-      <lastmod>2015-01-22T12:37:44+05:30</lastmod>
+      <lastmod>2015-01-22T13:46:55+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -37,7 +63,7 @@
   <url>
     <loc>droidekas.github.io/about.html</loc>
     
-      <lastmod>2015-01-22T12:37:44+05:30</lastmod>
+      <lastmod>2015-01-22T13:46:55+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -50,7 +76,7 @@
   <url>
     <loc>droidekas.github.io/atom.xml</loc>
     
-      <lastmod>2015-01-22T12:37:44+05:30</lastmod>
+      <lastmod>2015-01-22T13:46:55+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -63,7 +89,7 @@
   <url>
     <loc>droidekas.github.io/index.html</loc>
     
-      <lastmod>2015-01-22T12:37:44+05:30</lastmod>
+      <lastmod>2015-01-22T13:46:55+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -76,7 +102,7 @@
   <url>
     <loc>droidekas.github.io/sitemap.xml</loc>
     
-      <lastmod>2015-01-22T12:37:44+05:30</lastmod>
+      <lastmod>2015-01-22T13:46:55+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
