@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>satyarth</title>
+ <link href="droidekas.github.io/atom.xml" rel="self"/>
+ <link href="droidekas.github.io/"/>
+ <updated>2015-01-22T12:35:41+05:30</updated>
+ <id>droidekas.github.io</id>
+ <author>
+   <name>Satyarth</name>
+   <email>satyarth.23@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Posting (nothing) is easy</title>
+   <link href="droidekas.github.io/posting-nothing-is-easy.html"/>
+   <updated>2015-01-21T00:00:00+05:30</updated>
+   <id>droidekas.github.io/posting-nothing-is-easy</id>
+   <content type="html">&lt;p&gt;Starting a site is actually quite easy.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Find a &lt;a href=&quot;https://www.npmjs.com/package/generator-jekyllized&quot;&gt;generator&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Install everything to run the generator.&lt;/li&gt;
+&lt;li&gt;Fix a few &lt;a href=&quot;https://github.com/rowoot/gulp-gh-pages/issues/13&quot;&gt;bugs&lt;/a&gt;?&lt;/li&gt;
+&lt;li&gt;And then serve.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;u&gt;Voila!&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;Maintainting a website?&lt;/p&gt;
+
+&lt;p&gt;1.Well.&lt;/p&gt;
+
+&lt;p&gt;2.Well&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;3.&lt;strong&gt;Well&amp;hellip;&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Its even harder when you really dont know what to blog about.&lt;/p&gt;
+
+&lt;p&gt;I like experimenting.And this site is essentially going to be my play ground.A lot of though even went into choosing this platform and framework.Hopefully it shall pay off.&lt;/p&gt;
+
+&lt;p&gt;In the mean time,to compensate for the incapability of blogging.I shall just give a running commentary on how this website morphs.Maybe if i figure how to change website states so that the current state reflects the post?Lets see.&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

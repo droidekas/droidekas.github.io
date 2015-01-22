@@ -1,3 +1,0 @@
-# satyarth
-
-[Describe the project.]
