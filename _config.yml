@@ -51,9 +51,11 @@ defaults:
       type: "posts"
     values:
       actions: ["option1","option2","option3"]
+      comments:true
   -
     scope:
       path: ""
       type: "pages"
     values:
       actions: ["option4","option5","option6"]
+      comments:false
