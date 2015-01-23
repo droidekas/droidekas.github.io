@@ -4,7 +4,7 @@
  <title>My Website</title>
  <link href="droidekas.github.io/atom.xml" rel="self"/>
  <link href="droidekas.github.io/"/>
- <updated>2015-01-24T01:12:27+05:30</updated>
+ <updated>2015-01-24T02:07:10+05:30</updated>
  <id>droidekas.github.io</id>
  <author>
    <name>Satyarth</name>
@@ -18,7 +18,7 @@
    <updated>2015-01-23T00:00:00+05:30</updated>
    <id>droidekas.github.io/building%20this%20site/adding-that-floating-button</id>
    <content type="html">&lt;p&gt;
-Being an android developer,I am heavily influenced by the Android design philosophy.This design is quite inline with [material][3] design.And considering us *Android-&lt;small&gt;&lt;small&gt;develop&lt;/small&gt;&lt;/small&gt;ers* cannot get our hands Android 5.0 devices that easily.We have be content with emulators(*eeurgh*).I decided to try a few components on website interface.That tiny plus button took me about 3 hours to add.&lt;small&gt;&lt;small&gt;&lt;small&gt;Yes i know that makes me look stupid.&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/p&gt;
+Being an android developer,I am heavily influenced by the Android design philosophy.This design is quite inline with [3][material] design.And considering us &lt;em&gt;Android&lt;/em&gt;-(develop)-&lt;em&gt;ers&lt;/em&gt; cannot get our hands Android 5.0 devices that easily.We have be content with emulators( &lt;em&gt;eeurgh&lt;/em&gt; ).I decided to try a few components on website interface.That tiny plus button took me about 3 hours to add.&lt;small&gt;&lt;small&gt;&lt;small&gt;Yes i know that makes me look stupid.&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/p&gt;
 
 &lt;!--more--&gt;
 
