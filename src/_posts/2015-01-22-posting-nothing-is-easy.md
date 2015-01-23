@@ -1,10 +1,7 @@
 ---
-layout: 
+layout: post
 title: Posting (nothing) is easy
-categories: []
-tags: []
-published: True
-
+categories: [site]
 ---
 
 
