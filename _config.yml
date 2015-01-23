@@ -40,8 +40,8 @@ excerpt_separator: '<!--more-->'
 markdown: redcarpet
 # Markdown library options
 redcarpet:
-  extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
-              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
+  extensions: ['tables', 'fenced_code_blocks', 'autolink', 'smart',
+              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes','emphasis']
 highlighter: pygments
 
 defaults:

@@ -7,7 +7,7 @@ layout: post
 ---
 
 <p>
-Being an android developer,I am heavily influenced by the Android design philosophy.This design is quite inline with [material][3] design.And considering us *Android-<small><small>develop</small></small>ers* cannot get our hands Android 5.0 devices that easily.We have be content with emulators(*eeurgh*).I decided to try a few components on website interface.That tiny plus button took me about 3 hours to add.<small><small><small>Yes i know that makes me look stupid.</small></small></small></p>
+Being an android developer,I am heavily influenced by the Android design philosophy.This design is quite inline with [3][material] design.And considering us <em>Android</em>-(develop)-<em>ers</em> cannot get our hands Android 5.0 devices that easily.We have be content with emulators( <em>eeurgh</em> ).I decided to try a few components on website interface.That tiny plus button took me about 3 hours to add.<small><small><small>Yes i know that makes me look stupid.</small></small></small></p>
 
 <!--more-->
 >On a more holistic level ,a very interesting discussion is [here][4].
