@@ -1,7 +1,7 @@
 ---
 layout: 
 title: Why Jekyll+GH-pages+jekyllized-generator.
-categories: []
+categories: ["Building this site"]
 tags: []
 published: True
 

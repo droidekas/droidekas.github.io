@@ -42,7 +42,7 @@ markdown: redcarpet
 redcarpet:
   extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
               'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
-highlighter: rouge
+highlighter: pygments
 
 defaults:
   -
@@ -50,12 +50,46 @@ defaults:
       path: ""
       type: "posts"
     values:
-      actions: ["option1","option2","option3"]
-      comments:true
+      actions: 
+        - label: "option1"
+          icon: "ion-edit"
+          link: "#"
+        - label: "option2"
+          icon: "ion-arrow-down-c"
+          link: "#"
+        - label: "option3"
+          icon: "ion-social-github"
+          link: "#"
+      comments: true
   -
     scope:
       path: ""
       type: "pages"
     values:
-      actions: ["option4","option5","option6"]
-      comments:false
+      actions: 
+        - label: "option1"
+          icon: "ion-edit"
+          link: "#"
+        - label: "option2"
+          icon: "ion-arrow-down-c"
+          link: "#"
+        - label: "option3"
+          icon: "ion-social-github"
+          link: "#"
+      comments: false
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      actions: 
+       - label: "option1"
+         icon: "ion-edit"
+         link: "#"
+       - abel: "option2"
+         icon: "ion-arrow-down-c"
+         link: "#"
+       - abel: "option3"
+         icon: "ion-social-github"
+         link: "#"
+      comments: false

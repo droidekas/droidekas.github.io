@@ -12,10 +12,8 @@ Starting a site is actually quite easy.
 3. Fix a few [bugs](https://github.com/rowoot/gulp-gh-pages/issues/13)?
 4. And then serve.
 
-
-
-
 _Voila!_
+<!--more-->
 
 Maintainting a website?
 	

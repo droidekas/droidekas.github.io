@@ -90,7 +90,7 @@ $main_button_size: 56px;
 // main button diameter
 $child_button_size: 56px;
 // the distance of the main button from the closest corners of the screen
-$border-distance: 25px;
+$border-distance: 0px;
 // font-size for labels
 $labels-font-size: 13px;
 // top & bottom padding for the labels
@@ -157,7 +157,7 @@ $number-of-child-buttons: 4;
 }
 .mfb-component--tr{
   @extend .mfb-component;  
-  right: 0; top: 0;
+  right: 0; top: 10;
 }
 .mfb-component--bl{
   @extend .mfb-component;  

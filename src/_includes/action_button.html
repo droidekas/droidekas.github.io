@@ -1,15 +1,16 @@
 
 <ul class=" mfb-component--tr mfb-slidein">
   <li class="mfb-component__wrap">
-    <a href="#" data-mfb-label="A long long label" class="mfb-component__button--main">
+    <a href="#"  class="mfb-component__button--main">
       <i class="mfb-component__main-icon--resting ion-plus-round"></i>
       <i class="mfb-component__main-icon--active ion-edit"></i>
     </a>
     <ul class="mfb-component__list">
-      {% for node in page.actions %}
+      {% for option in page.actions %}
         <li>
-          <a href="#" data-mfb-label="{{node}}" data-mfb-label="label with long long title" class="mfb-component__button--child">
-            <i class="mfb-component__child-icon ion-paper-airplane"></i>
+          <a href="{{option.link}}" data-mfb-label="{{option.label}}"
+           class="mfb-component__button--child">
+            <i class="mfb-component__child-icon {{option.icon}}"></i>
           </a>
         </li>
       {% endfor %}
