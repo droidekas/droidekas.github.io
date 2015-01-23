@@ -4,7 +4,7 @@
  <title>My Website</title>
  <link href="droidekas.github.io/atom.xml" rel="self"/>
  <link href="droidekas.github.io/"/>
- <updated>2015-01-24T02:07:38+05:30</updated>
+ <updated>2015-01-24T02:15:07+05:30</updated>
  <id>droidekas.github.io</id>
  <author>
    <name>Satyarth</name>
@@ -18,7 +18,7 @@
    <updated>2015-01-23T00:00:00+05:30</updated>
    <id>droidekas.github.io/building%20this%20site/adding-that-floating-button</id>
    <content type="html">&lt;p&gt;
-Being an android developer,I am heavily influenced by the Android design philosophy.This design is quite inline with [3][material] design.And considering us &lt;em&gt;Android&lt;/em&gt;-(develop)-&lt;em&gt;ers&lt;/em&gt; cannot get our hands Android 5.0 devices that easily.We have be content with emulators( &lt;em&gt;eeurgh&lt;/em&gt; ).I decided to try a few components on website interface.That tiny plus button took me about 3 hours to add.&lt;small&gt;&lt;small&gt;&lt;small&gt;Yes i know that makes me look stupid.&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/p&gt;
+Being an android developer,I am heavily influenced by the Android design philosophy.This design is quite inline with [material][3] design.And considering us &lt;em&gt;Android&lt;/em&gt;-(develop)-&lt;em&gt;ers&lt;/em&gt; cannot get our hands Android 5.0 devices that easily.We have be content with emulators( &lt;em&gt;eeurgh&lt;/em&gt; ).I decided to try a few components on website interface.That tiny plus button took me about 3 hours to add.&lt;small&gt;&lt;small&gt;&lt;small&gt;Yes i know that makes me look stupid.&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -100,7 +100,7 @@ Being an android developer,I am heavily influenced by the Android design philoso
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Now that I was done with the setup,I could concentrate on the button itself.I would have 3 categories(depends entirely on you) of contexts.Those I added in the &lt;code&gt;_config.yml&lt;/code&gt; as defaults.These can be overriden in each post.But bearing in mind [5][that box] in the Jekyll website,i decided to &lt;strong&gt;DRY&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Now that I was done with the setup,I could concentrate on the button itself.I would have 3 categories(depends entirely on you) of contexts.Those I added in the &lt;code&gt;_config.yml&lt;/code&gt; as defaults.These can be overriden in each post.But bearing in mind &lt;a href=&quot;http://jekyllrb.com/docs/configuration/#front-matter-defaults&quot;&gt;that box&lt;/a&gt; in the Jekyll website,i decided to &lt;strong&gt;DRY&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;So my addendum to &lt;span class=&quot;filename&quot;&gt;_config.yml&lt;/span&gt;&lt;/p&gt;
 
@@ -137,7 +137,7 @@ Being an android developer,I am heavily influenced by the Android design philoso
           &lt;span class=&quot;l-Scalar-Plain&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;ion-social-github&amp;quot;&lt;/span&gt;
           &lt;span class=&quot;l-Scalar-Plain&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;I initially had a problem with figuring out YAML syntax.Heck,I still have a problem.So i would recommend a a [6][JSON to YAML] converter to prevent you from breaking your head.&lt;/p&gt;
+&lt;p&gt;I initially had a problem with figuring out YAML syntax.Heck,I still have a problem.So i would recommend a a &lt;a href=&quot;http://jsontoyaml.com/&quot;&gt;JSON to YAML&lt;/a&gt; converter to prevent you from breaking your head.&lt;/p&gt;
 
 &lt;p&gt;Now that the plugging of that beautiful widget is done,I could try figuring out a use case for it.In the mean time,shall try tinkering with the Sass files too.That I guess should cover one more post.&lt;/p&gt;
 </content>
