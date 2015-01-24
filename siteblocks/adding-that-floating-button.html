@@ -1,0 +1,99 @@
+<!DOCTYPE html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><link href=http://gmpg.org/xfn/11 rel=profile><meta http-equiv=content-type content="text/html; charset=utf-8"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>Adding that floating button &middot; My Website</title><link rel=stylesheet href=/assets/stylesheets/style.min.1d30a537.css><link rel=stylesheet href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400"><link rel=stylesheet type=text/css href=http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css><script src=/assets/javascript/all.min.74be1697.js></script><link rel=apple-touch-icon-precomposed sizes=144x144 href=/assets/images/touch/apple-touch-icon-144-precomposed.png><link rel="shortcut icon" href=/assets/favicon.ico><link rel=alternate type=application/rss+xml title=RSS href=/atom.xml></head><body class=theme-base-0f><input type=checkbox class=sidebar-checkbox id=sidebar-checkbox><div class=sidebar id=sidebar><div class=sidebar-item><p>why?</p></div><nav class=sidebar-nav><a class=sidebar-nav-item href="/">Home</a> <a class=sidebar-nav-item href=/about.html>About</a> <a class=sidebar-nav-item href=https://github.com/sondr3/generator-jekyllized>Jekyllized on Github</a> <a class=sidebar-nav-item href=https://github.com/poole>Poole on Github</a> <span class=sidebar-nav-item>Run by <a href=https://twitter.com/droid_ekas>@Satyarth<a></a></span></nav><div class=sidebar-item><p>&copy; 2015. All rights reserved.</p></div></div><ul class="mfb-component--tr mfb-slidein"><li class=mfb-component__wrap><a href=# class=mfb-component__button--main><i class="mfb-component__main-icon--resting ion-plus-round"></i> <i class="mfb-component__main-icon--active ion-edit"></i></a><ul class=mfb-component__list><li><a href=# data-mfb-label=option1 class=mfb-component__button--child><i class="mfb-component__child-icon ion-edit"></i></a></li><li><a href=# data-mfb-label=option2 class=mfb-component__button--child><i class="mfb-component__child-icon ion-arrow-down-c"></i></a></li><li><a href=# data-mfb-label=option3 class=mfb-component__button--child><i class="mfb-component__child-icon ion-social-github"></i></a></li></ul></li></ul><div class=wrap><div class=masthead><div class=container><h3 class=masthead-title><a href="/" title=Home>My Website</a> <small>personal</small></h3></div></div><div class="container content"><div class=post><h1 class=post-title>Adding that floating button</h1><span class=post-date>23 Jan 2015</span><p>Being an android developer, I am heavily influenced by the Android design philosophy.This design is quite inline with <a href=https://www.polymer-project.org/docs/elements/material>material design</a> . Considering us <em>Android-(develop)-ers</em> cannot get our hands Android 5.0 devices that easily, we have be content with emulators( <em>eeurgh</em> ). I decided to try a few components on website interface. That tiny plus button took me about 3 hours to add.<small><small><small>Yes, I know that makes me look stupid.</small></small></small></p><blockquote><p>On a more holistic level ,a very interesting discussion is <a href=http://ux.stackexchange.com/questions/67419/do-material-designs-floating-action-buttons-provide-a-bad-ux>here</a>.</p></blockquote><p>But I digress(as usual) thank you <a href=https://github.com/nobitagit>@nobitagit</a> for the fantastic <a href=https://github.com/nobitagit/material-floating-button>floating action bar</a> component.</p><p>This has the most detailed css documentation that I have come across. Not only is it extremely easy to use, but also looks supremely complicated().</p><p>I had decided to have this component in all pages. But this button by design is supposed to be contextual. Jekyll&rsquo;s <code>_include</code> provide a brilliant solution.</p><p>So just add the relevant html code as file to <code>_include</code>.</p><p><em><span class=filename>action_button.html</span></em></p><div class=highlight><pre><code class=language-html data-lang=html><span class=nt>&lt;ul</span> <span class=na>class=</span><span class=s>&quot;mfb-component--tr mfb-slidein&quot;</span><span class=nt>&gt;</span>
+    <span class=nt>&lt;li</span> <span class=na>class=</span><span class=s>&quot;mfb-component__wrap&quot;</span><span class=nt>&gt;</span>
+        <span class=nt>&lt;a</span> <span class=na>href=</span><span class=s>&quot;#&quot;</span> <span class=na>data-mfb-label=</span><span class=s>&quot;A long long label&quot;</span>
+         <span class=na>class=</span><span class=s>&quot;mfb-component__button--main&quot;</span><span class=nt>&gt;</span>
+            <span class=nt>&lt;i</span> <span class=na>class=</span><span class=s>&quot;mfb-component__main-icon--resting ion-plus-circled&quot;</span><span class=nt>&gt;&lt;/i&gt;</span>
+            <span class=nt>&lt;i</span> <span class=na>class=</span><span class=s>&quot;mfb-component__main-icon--active ion-information&quot;</span><span class=nt>&gt;&lt;/i&gt;</span>
+        <span class=nt>&lt;/a&gt;</span>
+        
+        <span class=nt>&lt;ul</span> <span class=na>class=</span><span class=s>&quot;mfb-component__list&quot;</span><span class=nt>&gt;</span>
+            {% for action in page.actions %}
+                <span class=nt>&lt;li&gt;</span>
+                    <span class=nt>&lt;a</span> <span class=na>href=</span><span class=s>&quot;{{action.link}}&quot;</span>
+                     <span class=na>data-mfb-label=</span><span class=s>&quot;{{action.title}}&quot;</span>
+                     <span class=na>class=</span><span class=s>&quot;mfb-component__button--child&quot;</span><span class=nt>&gt;</span>
+                        <span class=nt>&lt;i</span> <span class=na>class=</span><span class=s>&quot;mfb-component__child-icon </span>
+<span class=s>                        {{action.icon_class}}&quot;</span><span class=nt>&gt;&lt;/i&gt;</span>
+                    <span class=nt>&lt;/a&gt;</span>
+                <span class=nt>&lt;/li&gt;</span>
+            {% endfor %}
+        
+        <span class=nt>&lt;/ul&gt;</span>
+    <span class=nt>&lt;/li&gt;</span>
+<span class=nt>&lt;/ul&gt;</span></code></pre></div><p>This include then snugly sits in your layouts like:</p><p><span class=filename>default.html</span></p><div class=highlight><pre><code class=language-html data-lang=html><span class=nt>&lt;html</span> <span class=na>xmlns=</span><span class=s>&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class=na>xml:lang=</span><span class=s>&quot;en&quot;</span> <span class=na>lang=</span><span class=s>&quot;en-us&quot;</span><span class=nt>&gt;</span>
+
+  {% include head.html %}
+
+  <span class=nt>&lt;body</span> <span class=na>class=</span><span class=s>&quot;theme-base-0f &quot;</span><span class=nt>&gt;</span>
+
+    {% include sidebar.html %}
+    {% include action_button.html %}
+
+    <span class=c>&lt;!-- Wrap is the content to shift when toggling the sidebar. We wrap</span>
+<span class=c>     the</span>
+<span class=c>         content to avoid any CSS collisions with our real content. --&gt;</span>
+    <span class=nt>&lt;div</span> <span class=na>class=</span><span class=s>&quot;wrap&quot;</span><span class=nt>&gt;</span>
+      <span class=nt>&lt;div</span> <span class=na>class=</span><span class=s>&quot;masthead&quot;</span><span class=nt>&gt;</span>
+        <span class=nt>&lt;div</span> <span class=na>class=</span><span class=s>&quot;container&quot;</span><span class=nt>&gt;</span>
+          <span class=nt>&lt;h3</span> <span class=na>class=</span><span class=s>&quot;masthead-title&quot;</span><span class=nt>&gt;</span>
+            <span class=nt>&lt;a</span> <span class=na>href=</span><span class=s>&quot;/&quot;</span> <span class=na>title=</span><span class=s>&quot;Home&quot;</span><span class=nt>&gt;</span>{{ site.title }}<span class=nt>&lt;/a&gt;</span>
+            <span class=nt>&lt;small&gt;</span>{{ site.tagline }}<span class=nt>&lt;/small&gt;</span>
+          <span class=nt>&lt;/h3&gt;</span>
+        <span class=nt>&lt;/div&gt;</span>
+      <span class=nt>&lt;/div&gt;</span>
+
+      <span class=nt>&lt;div</span> <span class=na>class=</span><span class=s>&quot;container content&quot;</span><span class=nt>&gt;</span>
+        {{ content }}
+      <span class=nt>&lt;/div&gt;</span>
+      <span class=nt>&lt;div</span> <span class=na>class=</span><span class=s>&quot;comments&quot;</span><span class=nt>&gt;</span>
+        {% include comments.html %}
+      <span class=nt>&lt;/div&gt;</span>
+       
+    <span class=nt>&lt;/div&gt;</span>
+
+    <span class=nt>&lt;label</span> <span class=na>for=</span><span class=s>&quot;sidebar-checkbox&quot;</span> <span class=na>class=</span><span class=s>&quot;sidebar-toggle&quot;</span><span class=nt>&gt;&lt;/label&gt;</span>
+
+  <span class=nt>&lt;/body&gt;</span>
+<span class=nt>&lt;/html&gt;</span></code></pre></div><p>Now that I was done with the setup, I could concentrate on the button itself. I would have 3 categories(depends entirely on you) of contexts. Those I added in the <code>_config.yml</code> as defaults. These can be overridden in each post. But bearing in mind <a href=http://jekyllrb.com/docs/configuration/#front-matter-defaults>that box</a> in the Jekyll website, I decided to <strong>DRY</strong>.</p><p>So my addendum to <span class=filename>_config.yml</span></p><div class=highlight><pre><code class=language-yaml data-lang=yaml><span class=l-Scalar-Plain>defaults</span><span class=p-Indicator>:</span>
+  <span class=p-Indicator>-</span>
+    <span class=l-Scalar-Plain>scope</span><span class=p-Indicator>:</span>
+      <span class=l-Scalar-Plain>path</span><span class=p-Indicator>:</span> <span class=s>&quot;&quot;</span>
+      <span class=l-Scalar-Plain>type</span><span class=p-Indicator>:</span> <span class=s>&quot;posts&quot;</span>
+    <span class=l-Scalar-Plain>values</span><span class=p-Indicator>:</span>
+      <span class=l-Scalar-Plain>actions</span><span class=p-Indicator>:</span> 
+        <span class=p-Indicator>-</span> <span class=l-Scalar-Plain>label</span><span class=p-Indicator>:</span> <span class=s>&quot;option1&quot;</span>
+          <span class=l-Scalar-Plain>icon</span><span class=p-Indicator>:</span> <span class=s>&quot;ion-edit&quot;</span>
+          <span class=l-Scalar-Plain>link</span><span class=p-Indicator>:</span> <span class=s>&quot;#&quot;</span>
+        <span class=p-Indicator>-</span> <span class=l-Scalar-Plain>label</span><span class=p-Indicator>:</span> <span class=s>&quot;option2&quot;</span>
+          <span class=l-Scalar-Plain>icon</span><span class=p-Indicator>:</span> <span class=s>&quot;ion-arrow-down-c&quot;</span>
+          <span class=l-Scalar-Plain>link</span><span class=p-Indicator>:</span> <span class=s>&quot;#&quot;</span>
+        <span class=p-Indicator>-</span> <span class=l-Scalar-Plain>label</span><span class=p-Indicator>:</span> <span class=s>&quot;option3&quot;</span>
+          <span class=l-Scalar-Plain>icon</span><span class=p-Indicator>:</span> <span class=s>&quot;ion-social-github&quot;</span>
+          <span class=l-Scalar-Plain>link</span><span class=p-Indicator>:</span> <span class=s>&quot;#&quot;</span>
+
+  <span class=p-Indicator>-</span>
+    <span class=l-Scalar-Plain>scope</span><span class=p-Indicator>:</span>
+      <span class=l-Scalar-Plain>path</span><span class=p-Indicator>:</span> <span class=s>&quot;&quot;</span>
+      <span class=l-Scalar-Plain>type</span><span class=p-Indicator>:</span> <span class=s>&quot;pages&quot;</span>
+    <span class=l-Scalar-Plain>values</span><span class=p-Indicator>:</span>
+      <span class=l-Scalar-Plain>actions</span><span class=p-Indicator>:</span> 
+        <span class=p-Indicator>-</span> <span class=l-Scalar-Plain>label</span><span class=p-Indicator>:</span> <span class=s>&quot;option1&quot;</span>
+          <span class=l-Scalar-Plain>icon</span><span class=p-Indicator>:</span> <span class=s>&quot;ion-edit&quot;</span>
+          <span class=l-Scalar-Plain>link</span><span class=p-Indicator>:</span> <span class=s>&quot;#&quot;</span>
+        <span class=p-Indicator>-</span> <span class=l-Scalar-Plain>label</span><span class=p-Indicator>:</span> <span class=s>&quot;option2&quot;</span>
+          <span class=l-Scalar-Plain>icon</span><span class=p-Indicator>:</span> <span class=s>&quot;ion-arrow-down-c&quot;</span>
+          <span class=l-Scalar-Plain>link</span><span class=p-Indicator>:</span> <span class=s>&quot;#&quot;</span>
+        <span class=p-Indicator>-</span> <span class=l-Scalar-Plain>label</span><span class=p-Indicator>:</span> <span class=s>&quot;option3&quot;</span>
+          <span class=l-Scalar-Plain>icon</span><span class=p-Indicator>:</span> <span class=s>&quot;ion-social-github&quot;</span>
+          <span class=l-Scalar-Plain>link</span><span class=p-Indicator>:</span> <span class=s>&quot;#&quot;</span></code></pre></div><p>I initially had a problem with figuring out YAML syntax. Heck, I still have a problem. So I would recommend this <em>bad boy</em>, a <a href="http://jsontoyaml.com/">JSON to YAML</a> converter to prevent you from breaking your head.</p><p>Now that the plugging of that beautiful widget is done, I could try figuring out a use case for it. In the mean time, shall try tinkering with the Sass files too. That I guess should cover one more post.</p></div><div class=related><h2>Related Posts</h2><ul class=related-posts><li><h3><a href=/site/posting-nothing-is-easy.html>Posting (nothing) is easy <small>22 Jan 2015</small></a></h3></li></ul></div></div><div class=comments><div id=disqus_thread></div><script type=text/javascript>/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'droidekas'; // required: replace example with your forum shortname
+        var disqus_identifier = "";
+        var disqus_title ="/siteblocks/adding-that-floating-button.html";
+        var disqus_url = window.location.host.toString();
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();</script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div></div><label for=sidebar-checkbox class=sidebar-toggle></label></body></html>

@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>droidekas.github.io/</loc>
-    <lastmod>2015-01-24T02:15:42+05:30</lastmod>
+    <lastmod>2015-01-24T13:00:30+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
     <url>
-      <loc>droidekas.github.io/building%20this%20site/adding-that-floating-button.html</loc>
+      <loc>droidekas.github.io/siteblocks/adding-that-floating-button.html</loc>
       
         <lastmod>2015-01-23T00:00:00+05:30</lastmod>
       
@@ -37,7 +37,7 @@
   <url>
     <loc>droidekas.github.io/404.html</loc>
     
-      <lastmod>2015-01-24T02:15:42+05:30</lastmod>
+      <lastmod>2015-01-24T13:00:30+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -50,7 +50,7 @@
   <url>
     <loc>droidekas.github.io/about.html</loc>
     
-      <lastmod>2015-01-24T02:15:42+05:30</lastmod>
+      <lastmod>2015-01-24T13:00:30+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -63,7 +63,7 @@
   <url>
     <loc>droidekas.github.io/atom.xml</loc>
     
-      <lastmod>2015-01-24T02:15:42+05:30</lastmod>
+      <lastmod>2015-01-24T13:00:30+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -76,7 +76,7 @@
   <url>
     <loc>droidekas.github.io/index.html</loc>
     
-      <lastmod>2015-01-24T02:15:42+05:30</lastmod>
+      <lastmod>2015-01-24T13:00:30+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -89,7 +89,7 @@
   <url>
     <loc>droidekas.github.io/sitemap.xml</loc>
     
-      <lastmod>2015-01-24T02:15:42+05:30</lastmod>
+      <lastmod>2015-01-24T13:00:30+05:30</lastmod>
     
     
       <changefreq>monthly</changefreq>
