@@ -4,127 +4,13 @@
  <title>My Website</title>
  <link href="droidekas.github.io/atom.xml" rel="self"/>
  <link href="droidekas.github.io/"/>
- <updated>2015-01-24T16:26:15+05:30</updated>
+ <updated>2015-01-24T18:46:17+05:30</updated>
  <id>droidekas.github.io</id>
  <author>
    <name>Satyarth</name>
    <email>satyarth.23@gmail.com</email>
  </author>
 
- 
- <entry>
-   <title>Why Jekyll+gh-pages+jekyllized-generator.</title>
-   <link href="droidekas.github.io/siteblocks/why-jekyllghpagesjekyllizedgenerator.html"/>
-   <updated>2015-01-23T00:00:00+05:30</updated>
-   <id>droidekas.github.io/siteblocks/why-jekyllghpagesjekyllizedgenerator</id>
-   <content type="html">&lt;p&gt;So as i mentioned before,the plan was to use a system which provided an ease of blogging(writing).The main reason being that I have the habit of digressing.If I were to manually develop this platform.I’d spend so much time developing it,that I would not be able to(read: &lt;em&gt;lose the interest to&lt;/em&gt;) write about it.&lt;/p&gt;
-
-&lt;!--end-excerpt--&gt;
-
-&lt;p&gt;Before I start,you should know this&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;What I do know:&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Java&lt;/li&gt;
-  &lt;li&gt;Android Programming&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Googling&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Amateur web development&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;What i pretend to know&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Git&lt;/li&gt;
-  &lt;li&gt;Javascript&lt;/li&gt;
-  &lt;li&gt;Nodejs&lt;/li&gt;
-  &lt;li&gt;Sass,Less,Css&lt;/li&gt;
-  &lt;li&gt;Other cool stuff.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a name=&quot;dontknowlist&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;What I &lt;strong&gt;&lt;em&gt;do not&lt;/em&gt;&lt;/strong&gt; know&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ruby&lt;/li&gt;
-  &lt;li&gt;Jekyll&lt;/li&gt;
-  &lt;li&gt;YAML&lt;/li&gt;
-  &lt;li&gt;Markdown&lt;/li&gt;
-  &lt;li&gt;PHP&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Now that you know where I stand,back to the main point.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;So why this &lt;strong&gt;“Framework”&lt;/strong&gt; (can i call it that?) ?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;It’s (&lt;em&gt;majorly&lt;/em&gt;) open source.&lt;/p&gt;
-
-    &lt;p&gt;This gives you the ability to not give up on it.Put another way,this means that you cannot blame someone else for something not working and sit with your head in your hand and say that solving this is 
-  &lt;img src=&quot;../assets/images/impossibru.jpg&quot; width=&quot;200&quot; height=&quot;100&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Github Pages&lt;/p&gt;
-
-    &lt;p&gt;Its all on the cloud.You do not need to keep a copy in a safe place.Neither do you need to keep a copy on you when you want to work on it from someplace else.
-  Yes you could use your own private space for the same.But isn’t this so much more easier?
-  And I have noticed that these websites load quite fast.You really dont need worry about optimizations as long as you really dont plan on loading a video for the background or something.(I plan to try that someday).
-  Another feature which i like is the version control.It lets me treat the posts like I want without having to keep &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Organized and logical&lt;/p&gt;
-
-    &lt;p&gt;I have worked with pure HTML.It’s a disaster.Initially all the projects that I worked on were HTML + CSS + JS. Javascript was still easier to debug.Cross browser compatibilities totally messed up HTML and CSS.Those presumptuous browsers would render pages as deemed fit by them.
-  How do you work without Sass or Less these days?
-  I used to debug/write/code/modify stylesheets from the browser thanks to &lt;a href=&quot;https://developer.chrome.com/devtools/docs/workspaces&quot;&gt;Chrome’s capability to work as an IDE now&lt;/a&gt;.
-  Sublime has  a brilliant &lt;a href=&quot;https://github.com/timdouglas/sublime-less2css&quot;&gt;less2css&lt;/a&gt; plugin which takes care of converting your Less files to css so that your project structure(which you cannot fiddle with) does not change.
-  Sass, IMHO,for an amateur isnt that different from Less.It gives you the ability of classes and inheritance and a lot of performance tweaks.But Less is a tad bit easier to install for us non ruby Windows&lt;sup&gt;™&lt;/sup&gt;-speaking &lt;em&gt;cannot-afford-a-mac&lt;/em&gt; people.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;SSG&lt;/p&gt;
-
-    &lt;p&gt;Static Site generators might have their flaws.But they are apt for blogging.You do not need to worry about a database or other frontend,middleware,backend components of your site.You concentrate on the content and trust me,thats the hardest part
-&lt;strong&gt;&lt;em&gt;points at self&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;site&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Yes I just personified this whole site.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Jekyll&lt;/p&gt;
-
-    &lt;p&gt;It redefines easy.Even its &lt;a href=&quot;http://jekyllrb.com/docs/structure/&quot;&gt;directory structure&lt;/a&gt; underlines how a blog should work.the &lt;code&gt;_drafts&lt;/code&gt; folder functions like your staging area where you could,well..&lt;strong&gt;Do anything&lt;/strong&gt;.Draft till kingdom-come and then move it to the &lt;code&gt;_posts&lt;/code&gt;,and it gets published.Yes that is pretty much like copy paste thing.But bear in mind this is your mobile workspace.Your drafts and posts are under svn.You do not have to bother about different versions of the draft in different folders(Its really not that hard to lose something on your computer).&lt;/p&gt;
-
-    &lt;p&gt;It also provides you the unique quirk of &lt;code&gt;_includes&lt;/code&gt;.Where you could add HTML or your personal non-content additions in an organized manner. Its like those Bootstrap,Backbone,Jquery combinations where you reload only the data div while verything remains constant.&lt;/p&gt;
-
-    &lt;p&gt;This quirk is what convinced me to move to the dark side.Because I love coding and I am a programmer.I could not blog using a CMS like wordpress because while it makes bloggin easy,it makes modifications harder(remember &lt;a href=&quot;#dontknowlist&quot;&gt;I do not know&lt;/a&gt; PHP).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Jekyllized Generator:&lt;/p&gt;
-
-    &lt;p&gt;For those of you in javascript development who ahve not heard of &lt;a href=&quot;http://yeoman.io/&quot;&gt;Yeoman&lt;/a&gt;,please acquaint yourself to it.Its a thing of beauty w.r.t to scaffolding and other generating boiler palte code.
-  Now comes out the gem (or for those Ruby people a bunch of gems)
-  &lt;a href=&quot;https://www.npmjs.com/package/generator-jekyllized&quot;&gt;generator-jekyllized&lt;/a&gt; by &lt;a href=&quot;https://github.com/sondr3/&quot;&gt;@sondr3&lt;/a&gt; is a beauty.Although the page states it is still unfinished,It is amazingly stable and very debuggable.By the magic of Gulp and yo,it automates all your process flow and you are left concentrating only on the content and not the scaffolding,plumbing and all the other euphemisms with absolutely no relation to what you have to do(pull the hair off your head).&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There you go.Thats my &lt;strong&gt;“stack”&lt;/strong&gt;.Its not much,heck its nothing apart from a bloggin platform.But I hope to do more.Lesse :).&lt;/p&gt;
-
-</content>
- </entry>
  
  <entry>
    <title>Adding that floating button</title>
@@ -140,7 +26,7 @@
 
 &lt;p&gt;But I digress(as usual) thank you &lt;a href=&quot;https://github.com/nobitagit&quot;&gt;@nobitagit&lt;/a&gt; for the fantastic &lt;a href=&quot;https://github.com/nobitagit/material-floating-button&quot;&gt;floating action bar&lt;/a&gt; component.&lt;/p&gt;
 
-&lt;p&gt;This has the most detailed css documentation that I have come across. Not only is it extremely  easy to use, but also looks supremely complicated().&lt;/p&gt;
+&lt;p&gt;This has the most detailed css documentation that I have come across. Not only is it extremely  easy to use, but also looks supremely complicated.&lt;/p&gt;
 
 &lt;p&gt;I had decided to have this component in all pages. But this button by design is supposed to be contextual. Jekyll’s  &lt;code&gt;_include&lt;/code&gt; provide a brilliant solution.&lt;/p&gt;
 
@@ -273,7 +159,7 @@
 
 &lt;p&gt;&lt;em&gt;Voila!&lt;/em&gt;&lt;/p&gt;
 
-&lt;!--more--&gt;
+&lt;!--end-excerpt--&gt;
 
 &lt;p&gt;Maintaining a website?&lt;/p&gt;
 
@@ -288,6 +174,122 @@
 &lt;p&gt;I like experimenting, and this site is essentially going to be my play ground. A lot of thought even went into choosing this platform and framework. Hopefully it shall pay off.&lt;/p&gt;
 
 &lt;p&gt;In the meantime, to compensate for the incapability of blogging, I shall just give a running commentary on how this website morphs. Maybe if I figure how to change website states so that the current state reflects the post? Let’s see.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Why Jekyll+gh-pages+jekyllized-generator.</title>
+   <link href="droidekas.github.io/siteblocks/why-jekyllghpagesjekyllizedgenerator.html"/>
+   <updated>2015-01-21T00:00:00+05:30</updated>
+   <id>droidekas.github.io/siteblocks/why-jekyllghpagesjekyllizedgenerator</id>
+   <content type="html">&lt;p&gt;So as i mentioned before,the plan was to use a system which provided an ease of blogging(writing).The main reason being that I have the habit of digressing.If I were to manually develop this platform.I’d spend so much time developing it,that I would not be able to(read: &lt;em&gt;lose the interest to&lt;/em&gt;) write about it.&lt;/p&gt;
+
+&lt;!--end-excerpt--&gt;
+
+&lt;p&gt;Before I start,you should know this.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;dontknowlist&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;What I do know&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;What i pretend to know&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;What I &lt;strong&gt;&lt;em&gt;do not&lt;/em&gt;&lt;/strong&gt; know&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Java&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Git&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Ruby&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Android Programming&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Javascript&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Jekyll&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;Googling&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Nodejs&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;YAML&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Amateur web development&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Sass,Less,Css&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Markdown&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Other cool stuff&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;PHP&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Now that you know where I stand,back to the main point.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;So why this &lt;strong&gt;“Framework”&lt;/strong&gt; (can i call it that?) ?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;It’s (&lt;em&gt;majorly&lt;/em&gt;) open source.&lt;/p&gt;
+
+    &lt;p&gt;This gives you the ability to not give up on it.Put another way,this means that you cannot blame someone else for something not working and sit with your head in your hand and say that solving this is 
+  &lt;img src=&quot;../assets/images/impossibru.jpg&quot; width=&quot;200&quot; height=&quot;100&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Github Pages&lt;/p&gt;
+
+    &lt;p&gt;Its all on the cloud.You do not need to keep a copy in a safe place.Neither do you need to keep a copy on you when you want to work on it from someplace else.
+  Yes you could use your own private space for the same.But isn’t this so much more easier?
+  And I have noticed that these websites load quite fast.You really dont need worry about optimizations as long as you really dont plan on loading a video for the background or something.(I plan to try that someday).
+  Another feature which i like is the version control.It lets me treat the posts like I want without having to keep &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Organized and logical&lt;/p&gt;
+
+    &lt;p&gt;I have worked with pure HTML.It’s a disaster.Initially all the projects that I worked on were HTML + CSS + JS. Javascript was still easier to debug.Cross browser compatibilities totally messed up HTML and CSS.Those presumptuous browsers would render pages as deemed fit by them.
+  How do you work without Sass or Less these days?
+  I used to debug/write/code/modify stylesheets from the browser thanks to &lt;a href=&quot;https://developer.chrome.com/devtools/docs/workspaces&quot;&gt;Chrome’s capability to work as an IDE now&lt;/a&gt;.
+  Sublime has  a brilliant &lt;a href=&quot;https://github.com/timdouglas/sublime-less2css&quot;&gt;less2css&lt;/a&gt; plugin which takes care of converting your Less files to css so that your project structure(which you cannot fiddle with) does not change.
+  Sass, IMHO,for an amateur isnt that different from Less.It gives you the ability of classes and inheritance and a lot of performance tweaks.But Less is a tad bit easier to install for us non ruby Windows&lt;sup&gt;™&lt;/sup&gt;-speaking &lt;em&gt;cannot-afford-a-mac&lt;/em&gt; people.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;SSG&lt;/p&gt;
+
+    &lt;p&gt;Static Site generators might have their flaws.But they are apt for blogging.You do not need to worry about a database or other frontend,middleware,backend components of your site.You concentrate on the content and trust me,thats the hardest part
+&lt;strong&gt;&lt;em&gt;points at self&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;site&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Yes I just personified this whole site.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Jekyll&lt;/p&gt;
+
+    &lt;p&gt;It redefines easy.Even its &lt;a href=&quot;http://jekyllrb.com/docs/structure/&quot;&gt;directory structure&lt;/a&gt; underlines how a blog should work.the &lt;code&gt;_drafts&lt;/code&gt; folder functions like your staging area where you could,well..&lt;strong&gt;Do anything&lt;/strong&gt;.Draft till kingdom-come and then move it to the &lt;code&gt;_posts&lt;/code&gt;,and it gets published.Yes that is pretty much like copy paste thing.But bear in mind this is your mobile workspace.Your drafts and posts are under svn.You do not have to bother about different versions of the draft in different folders(Its really not that hard to lose something on your computer).&lt;/p&gt;
+
+    &lt;p&gt;It also provides you the unique quirk of &lt;code&gt;_includes&lt;/code&gt;.Where you could add HTML or your personal non-content additions in an organized manner. Its like those Bootstrap,Backbone,Jquery combinations where you reload only the data div while verything remains constant.&lt;/p&gt;
+
+    &lt;p&gt;This quirk is what convinced me to move to the dark side.Because I love coding and I am a programmer.I could not blog using a CMS like wordpress because while it makes bloggin easy,it makes modifications harder(remember &lt;a href=&quot;#dontknowlist&quot;&gt;I do not know&lt;/a&gt; PHP).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Jekyllized Generator:&lt;/p&gt;
+
+    &lt;p&gt;For those of you in javascript development who ahve not heard of &lt;a href=&quot;http://yeoman.io/&quot;&gt;Yeoman&lt;/a&gt;,please acquaint yourself to it.Its a thing of beauty w.r.t to scaffolding and other generating boiler palte code.
+  Now comes out the gem (or for those Ruby people a bunch of gems)
+  &lt;a href=&quot;https://www.npmjs.com/package/generator-jekyllized&quot;&gt;generator-jekyllized&lt;/a&gt; by &lt;a href=&quot;https://github.com/sondr3/&quot;&gt;@sondr3&lt;/a&gt; is a beauty.Although the page states it is still unfinished,It is amazingly stable and very debuggable.By the magic of Gulp and yo,it automates all your process flow and you are left concentrating only on the content and not the scaffolding,plumbing and all the other euphemisms with absolutely no relation to what you have to do(pull the hair off your head).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There you go.Thats my &lt;strong&gt;“stack”&lt;/strong&gt;.Its not much,heck its nothing apart from a bloggin platform.But I hope to do more.Lesse :).&lt;/p&gt;
 
 </content>
  </entry>
