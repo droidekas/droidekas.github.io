@@ -4,7 +4,7 @@
  <title>My Website</title>
  <link href="droidekas.github.io/atom.xml" rel="self"/>
  <link href="droidekas.github.io/"/>
- <updated>2015-01-24T13:00:30+05:30</updated>
+ <updated>2015-01-24T13:02:33+05:30</updated>
  <id>droidekas.github.io</id>
  <author>
    <name>Satyarth</name>
@@ -156,8 +156,9 @@
 &lt;li&gt;And then serve.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;u&gt;Voila!&lt;/u&gt;
-&amp;lt;!&amp;ndash;more&amp;ndash;&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Voila!&lt;/u&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;Maintaining a website?&lt;/p&gt;
 
