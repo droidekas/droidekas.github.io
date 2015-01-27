@@ -1,58 +1,52 @@
 ---
 title: Adding that floating button
-categories: ["SiteBlocks"]
+categories: ["Building this site"]
 tags: ["UI"]
 published: True
 layout: post
 ---
 
+<p>
+Being an android developer, I am heavily influenced by the Android design philosophy.This design is quite inline with [material][3] design. Considering us <em>Android</em>-(develop)-<em>ers</em> cannot get our hands Android 5.0 devices that easily, we have be content with emulators( <em>eeurgh</em> ). I decided to try a few components on website interface. That tiny plus button took me about 3 hours to add.<small><small><small>Yes, I know that makes me look stupid.</small></small></small></p>
 
-Being an android developer, I am heavily influenced by the Android design philosophy.This design is quite inline with [material design][1] . Considering us *Android-(develop)-ers* cannot get our hands Android 5.0 devices that easily, we have be content with emulators( *eeurgh* ). I decided to try a few components on website interface. That tiny plus button took me about 3 hours to add.<small><small><small>Yes, I know that makes me look stupid.</small></small></small>
-
-<!--end-excerpt-->
+<!--more-->
 >On a more holistic level ,a very interesting discussion is [here][4].
 
 
 
-But I digress(as usual) thank you [@nobitagit][2] for the fantastic [floating action bar][3] component.
+But I digress(as usual) thank you [@nobitagit][1] for the fantastic [floating action bar][2] component.
 
-This has the most detailed css documentation that I have come across. Not only is it extremely  easy to use, but also looks supremely complicated.
+This has the most detailed css documentation that I have come across. Not only is it extremely  easy to use, but also looks supremely complicated().
 
 I had decided to have this component in all pages. But this button by design is supposed to be contextual. Jekyll's  `_include` provide a brilliant solution.
 
 So just add the relevant html code as file to `_include`.
 
-
-
-
-
 *<span class="filename">action_button.html</span>*
 
 {% highlight html%}
-
 <ul class="mfb-component--tr mfb-slidein">
-
-  <li class="mfb-component__wrap">
-
-    <a href="#" data-mfb-label="main label" class="mfb-component__button--main">
-      <i class="mfb-component__main-icon--restingion-plus-circled"></i>
-      <i class="mfb-component__main-icon--activeion-information"></i>
-    </a>
-    {% raw %}
-    <ul class="mfb-component__list">
-      {% for action in page.actions %}
-        <li>
-
-        <a href="{{action.link}}" data-mfb-label="{{action.title}}"
-          class="mfb-component__button--child">
-          <i class="mfb-component__child-icon {{action.icon_class}}"></i>
-        </a>
-        
-        </li>
-      {% endfor %}
-    {% endraw %}
-  </ul>
-</li>
+	<li class="mfb-component__wrap">
+		<a href="#" data-mfb-label="A long long label"
+		 class="mfb-component__button--main">
+			<i class="mfb-component__main-icon--resting ion-plus-circled"></i>
+			<i class="mfb-component__main-icon--active ion-information"></i>
+		</a>
+		{% raw %}
+		<ul class="mfb-component__list">
+			{% for action in page.actions %}
+				<li>
+					<a href="{{action.link}}"
+					 data-mfb-label="{{action.title}}"
+					 class="mfb-component__button--child">
+						<i class="mfb-component__child-icon 
+						{{action.icon_class}}"></i>
+					</a>
+				</li>
+			{% endfor %}
+		{% endraw %}
+		</ul>
+	</li>
 </ul>
 {% endhighlight %}
 
@@ -105,8 +99,6 @@ This include then snugly sits in your layouts like:
 
 Now that I was done with the setup, I could concentrate on the button itself. I would have 3 categories(depends entirely on you) of contexts. Those I added in the `_config.yml` as defaults. These can be overridden in each post. But bearing in mind [that box][5] in the Jekyll website, I decided to **DRY**.
 
-
-
 So my addendum to <span class="filename">_config.yml</span>
 
 {% highlight YAML%}
@@ -146,21 +138,21 @@ defaults:
 
 {% endhighlight %}
 
-I initially had a problem with figuring out YAML syntax. Heck, I still have a problem. So I would recommend this *bad boy*, a [JSON to YAML][6] converter to prevent you from breaking your head.
+I initially had a problem with figuring out YAML syntax. Heck, I still have a problem. So I would recommend a [JSON to YAML][6] converter to prevent you from breaking your head.
 
 Now that the plugging of that beautiful widget is done, I could try figuring out a use case for it. In the mean time, shall try tinkering with the Sass files too. That I guess should cover one more post.
 
 
-[1]:https://www.polymer-project.org/docs/elements/material.html
-[2]:https://github.com/nobitagit
-[3]:https://github.com/nobitagit/material-floating-button
+
+
+
+
+[1]:https://github.com/nobitagit
+[2]:https://github.com/nobitagit/material-floating-button
+[3]:https://www.polymer-project.org/docs/elements/material.html
 [4]:http://ux.stackexchange.com/questions/67419/do-material-designs-floating-action-buttons-provide-a-bad-ux
 [5]:http://jekyllrb.com/docs/configuration/#front-matter-defaults
 [6]:http://jsontoyaml.com/
-
-
-
-
 
 
 

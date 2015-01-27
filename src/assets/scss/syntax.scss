@@ -68,13 +68,12 @@
 .css .o,
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
- .post > .highlight .lineno { color: #ccc; display:inline-block; padding: 0 5px; border-right:1px solid #ccc; }
- .post > .highlight pre code { display: block; white-space: pre;  word-wrap: normal; }
+ // .post > .highlight .lineno { color: #ccc; display:inline-block; padding: 0 5px; border-right:1px solid #ccc; }
+ // .post > .highlight pre code { display: block; white-space: pre;  word-wrap: normal; }
 
 
 pre{
-	text:nowrap;
-	overflow-x:hidden;
+	overflow-x:auto;
 	width:100%;
 	background:#122B3B;
 	margin:auto;

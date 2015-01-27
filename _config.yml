@@ -34,15 +34,15 @@ relative_permalinks: true
 permalink: none
 paginate: 10
 paginate_path: 'page:num'
-excerpt_separator: '<!--more-->'
+excerpt_separator: '<!--end-excerpt-->'
 
 # Markdown library
-markdown: redcarpet
+markdown: kramdown
 # Markdown library options
-redcarpet:
-  extensions: ['tables', 'fenced_code_blocks', 'autolink', 'smart',
-              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes','emphasis']
-highlighter: pygments
+# redcarpet:
+#   extensions: ['tables', 'fenced_code_blocks', 'autolink', 'smart',
+#               'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes','emphasis']
+highlighter: rouge
 
 defaults:
   -

@@ -13,7 +13,6 @@ Starting a site is actually quite easy.
 4. And then serve.
 
 _Voila!_
-
 <!--end-excerpt-->
 
 Maintaining a website?
