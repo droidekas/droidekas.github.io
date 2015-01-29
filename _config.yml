@@ -42,7 +42,7 @@ markdown: kramdown
 # redcarpet:
 #   extensions: ['tables', 'fenced_code_blocks', 'autolink', 'smart',
 #               'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes','emphasis']
-highlighter: rouge
+highlighter: true
 
 defaults:
   -
