@@ -75,3 +75,4 @@ DEPENDENCIES
   jekyll
   redcarpet
   rouge
+  kramdown

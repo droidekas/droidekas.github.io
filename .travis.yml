@@ -15,7 +15,7 @@ script:
  - gem install jekyll
  - gulp publish
 
-after_script:
+after_success:
  - git config --global user.email  "mail+travis@droidekas.github.io"
  - git config --global user.name "Travis-CI"
  - gulp deploy
