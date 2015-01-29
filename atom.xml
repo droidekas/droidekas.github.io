@@ -4,7 +4,7 @@
  <title>My Website</title>
  <link href="droidekas.github.io/atom.xml" rel="self"/>
  <link href="droidekas.github.io/"/>
- <updated>2015-01-24T20:43:15+05:30</updated>
+ <updated>2015-01-29T17:08:49+00:00</updated>
  <id>droidekas.github.io</id>
  <author>
    <name>Satyarth</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Adding that floating button</title>
    <link href="droidekas.github.io/siteblocks/adding-that-floating-button.html"/>
-   <updated>2015-01-23T00:00:00+05:30</updated>
+   <updated>2015-01-23T00:00:00+00:00</updated>
    <id>droidekas.github.io/siteblocks/adding-that-floating-button</id>
    <content type="html">&lt;p&gt;Being an android developer, I am heavily influenced by the Android design philosophy.This design is quite inline with &lt;a href=&quot;https://www.polymer-project.org/docs/elements/material.html&quot;&gt;material design&lt;/a&gt; . Considering us &lt;em&gt;Android-(develop)-ers&lt;/em&gt; cannot get our hands Android 5.0 devices that easily, we have be content with emulators( &lt;em&gt;eeurgh&lt;/em&gt; ). I decided to try a few components on website interface. That tiny plus button took me about 3 hours to add.&lt;small&gt;&lt;small&gt;&lt;small&gt;Yes, I know that makes me look stupid.&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/p&gt;
 
@@ -34,107 +34,107 @@
 
 &lt;p&gt;&lt;em&gt;&lt;span class=&quot;filename&quot;&gt;action_button.html&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mfb-component--tr mfb-slidein&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;ul class=&amp;quot;mfb-component--tr mfb-slidein&amp;quot;&amp;gt;
 
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mfb-component__wrap&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &amp;lt;li class=&amp;quot;mfb-component__wrap&amp;quot;&amp;gt;
 
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-mfb-label=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;main label&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mfb-component__button--main&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mfb-component__main-icon--restingion-plus-circled&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mfb-component__main-icon--activeion-information&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &amp;lt;a href=&amp;quot;#&amp;quot; data-mfb-label=&amp;quot;main label&amp;quot; class=&amp;quot;mfb-component__button--main&amp;quot;&amp;gt;
+      &amp;lt;i class=&amp;quot;mfb-component__main-icon--restingion-plus-circled&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+      &amp;lt;i class=&amp;quot;mfb-component__main-icon--activeion-information&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+    &amp;lt;/a&amp;gt;
     
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mfb-component__list&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &amp;lt;ul class=&amp;quot;mfb-component__list&amp;quot;&amp;gt;
       {% for action in page.actions %}
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+        &amp;lt;li&amp;gt;
 
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{action.link}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-mfb-label=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{action.title}}&quot;&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mfb-component__button--child&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mfb-component__child-icon {{action.icon_class}}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &amp;lt;a href=&amp;quot;{{action.link}}&amp;quot; data-mfb-label=&amp;quot;{{action.title}}&amp;quot;
+          class=&amp;quot;mfb-component__button--child&amp;quot;&amp;gt;
+          &amp;lt;i class=&amp;quot;mfb-component__child-icon {{action.icon_class}}&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+        &amp;lt;/a&amp;gt;
         
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &amp;lt;/li&amp;gt;
       {% endfor %}
     
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &amp;lt;/ul&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This include then snugly sits in your layouts like:&lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&quot;filename&quot;&gt;default.html&lt;/span&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.w3.org/1999/xhtml&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xml:lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;en&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;en-us&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;html xmlns=&amp;quot;http://www.w3.org/1999/xhtml&amp;quot; xml:lang=&amp;quot;en&amp;quot; lang=&amp;quot;en-us&amp;quot;&amp;gt;
 
   {% include head.html %}
 
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;theme-base-0f &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &amp;lt;body class=&amp;quot;theme-base-0f &amp;quot;&amp;gt;
 
     {% include sidebar.html %}
     {% include action_button.html %}
 
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Wrap is the content to shift when toggling the sidebar. We wrap
+    &amp;lt;!-- Wrap is the content to shift when toggling the sidebar. We wrap
      the
-         content to avoid any CSS collisions with our real content. --&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;masthead&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;container&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;masthead-title&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Home&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ site.title }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;small&amp;gt;&lt;/span&gt;{{ site.tagline }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/small&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+         content to avoid any CSS collisions with our real content. --&amp;gt;
+    &amp;lt;div class=&amp;quot;wrap&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;masthead&amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+          &amp;lt;h3 class=&amp;quot;masthead-title&amp;quot;&amp;gt;
+            &amp;lt;a href=&amp;quot;/&amp;quot; title=&amp;quot;Home&amp;quot;&amp;gt;{{ site.title }}&amp;lt;/a&amp;gt;
+            &amp;lt;small&amp;gt;{{ site.tagline }}&amp;lt;/small&amp;gt;
+          &amp;lt;/h3&amp;gt;
+        &amp;lt;/div&amp;gt;
+      &amp;lt;/div&amp;gt;
 
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;container content&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &amp;lt;div class=&amp;quot;container content&amp;quot;&amp;gt;
         {{ content }}
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;comments&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &amp;lt;/div&amp;gt;
+      &amp;lt;div class=&amp;quot;comments&amp;quot;&amp;gt;
         {% include comments.html %}
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &amp;lt;/div&amp;gt;
        
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &amp;lt;/div&amp;gt;
 
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sidebar-checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sidebar-toggle&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
+    &amp;lt;label for=&amp;quot;sidebar-checkbox&amp;quot; class=&amp;quot;sidebar-toggle&amp;quot;&amp;gt;&amp;lt;/label&amp;gt;
 
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Now that I was done with the setup, I could concentrate on the button itself. I would have 3 categories(depends entirely on you) of contexts. Those I added in the &lt;code&gt;_config.yml&lt;/code&gt; as defaults. These can be overridden in each post. But bearing in mind &lt;a href=&quot;http://jekyllrb.com/docs/configuration/#front-matter-defaults&quot;&gt;that box&lt;/a&gt; in the Jekyll website, I decided to &lt;strong&gt;DRY&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;So my addendum to &lt;span class=&quot;filename&quot;&gt;_config.yml&lt;/span&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;defaults&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;scope&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;posts&quot;&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; 
-        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;option1&quot;&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;ion-edit&quot;&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;#&quot;&lt;/span&gt;
-        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;option2&quot;&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;ion-arrow-down-c&quot;&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;#&quot;&lt;/span&gt;
-        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;option3&quot;&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;ion-social-github&quot;&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;#&quot;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;defaults:
+  -
+    scope:
+      path: &amp;quot;&amp;quot;
+      type: &amp;quot;posts&amp;quot;
+    values:
+      actions: 
+        - label: &amp;quot;option1&amp;quot;
+          icon: &amp;quot;ion-edit&amp;quot;
+          link: &amp;quot;#&amp;quot;
+        - label: &amp;quot;option2&amp;quot;
+          icon: &amp;quot;ion-arrow-down-c&amp;quot;
+          link: &amp;quot;#&amp;quot;
+        - label: &amp;quot;option3&amp;quot;
+          icon: &amp;quot;ion-social-github&amp;quot;
+          link: &amp;quot;#&amp;quot;
 
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;scope&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;pages&quot;&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; 
-        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;option1&quot;&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;ion-edit&quot;&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;#&quot;&lt;/span&gt;
-        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;option2&quot;&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;ion-arrow-down-c&quot;&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;#&quot;&lt;/span&gt;
-        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;option3&quot;&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;ion-social-github&quot;&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;#&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  -
+    scope:
+      path: &amp;quot;&amp;quot;
+      type: &amp;quot;pages&amp;quot;
+    values:
+      actions: 
+        - label: &amp;quot;option1&amp;quot;
+          icon: &amp;quot;ion-edit&amp;quot;
+          link: &amp;quot;#&amp;quot;
+        - label: &amp;quot;option2&amp;quot;
+          icon: &amp;quot;ion-arrow-down-c&amp;quot;
+          link: &amp;quot;#&amp;quot;
+        - label: &amp;quot;option3&amp;quot;
+          icon: &amp;quot;ion-social-github&amp;quot;
+          link: &amp;quot;#&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;I initially had a problem with figuring out YAML syntax. Heck, I still have a problem. So I would recommend this &lt;em&gt;bad boy&lt;/em&gt;, a &lt;a href=&quot;http://jsontoyaml.com/&quot;&gt;JSON to YAML&lt;/a&gt; converter to prevent you from breaking your head.&lt;/p&gt;
 
@@ -146,7 +146,7 @@
  <entry>
    <title>Posting (nothing) is easy</title>
    <link href="droidekas.github.io/site/posting-nothing-is-easy.html"/>
-   <updated>2015-01-22T00:00:00+05:30</updated>
+   <updated>2015-01-22T00:00:00+00:00</updated>
    <id>droidekas.github.io/site/posting-nothing-is-easy</id>
    <content type="html">&lt;p&gt;Starting a site is actually quite easy.&lt;/p&gt;
 
@@ -181,7 +181,7 @@
  <entry>
    <title>Why Jekyll+gh-pages+jekyllized-generator.</title>
    <link href="droidekas.github.io/siteblocks/why-jekyllghpagesjekyllizedgenerator.html"/>
-   <updated>2015-01-21T00:00:00+05:30</updated>
+   <updated>2015-01-21T00:00:00+00:00</updated>
    <id>droidekas.github.io/siteblocks/why-jekyllghpagesjekyllizedgenerator</id>
    <content type="html">&lt;p&gt;So as i mentioned before,the plan was to use a system which provided an ease of blogging(writing).The main reason being that I have the habit of digressing.If I were to manually develop this platform.I’d spend so much time developing it,that I would not be able to(read: &lt;em&gt;lose the interest to&lt;/em&gt;) write about it.&lt;/p&gt;
 
@@ -266,7 +266,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;site&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;self=this.site&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Yes I just personified this whole site.&lt;/p&gt;
 
