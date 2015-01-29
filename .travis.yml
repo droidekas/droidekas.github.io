@@ -1,25 +1,20 @@
 language: ruby
 rvm:
 - 2.1.5
-
 branches:
- only:
- - development
- - master
-
+  only:
+  - development
+  - master
 before_script:
- - npm install
-
+- npm install
 script:
- - gem install rouge
- - gem install jekyll
- - gulp publish
-
+- gem install rouge
+- gem install jekyll
+- gulp publish
 after_success:
- - git config --global user.email  "mail+travis@droidekas.github.io"
- - git config --global user.name "Travis-CI"
- - gulp deploy
-
+- git config --global user.email  "mail+travis@droidekas.github.io"
+- git config --global user.name "Travis-CI"
+- gulp deploy
 env:
- global:
-  secure: Hytqq10mkCScBZM/k45O/mJdYtluhvsJkZCrQtev+LObkR47+FEU+V6W7BsDHp1GQR1Xi9vAL5LkUdZ4oeZtVq326QO5xz79Y+MWztFv9RXHq372YynNujquKtjr3I/TZq+tO47B2q08hlChQ+hw0D+PYo9OIOQ7Fzsu/qBJfPo=
+  global:
+    secure: IsZVMQSEJjP9HEM5BiTqCNdFvaYtz9ZZLI67XCxymAuRE04DM75tjF+d2xLCtJ8xUDzYVSnyJrB8jWJd/EsgddRxAp2Pm+TtPdp3mzoFNaA43wq6hclNaJB6GYutrlhCbbh/Ck5t3p7asMVk3rx8Jp3vb4cQa3fGkP3siMPfV64=
