@@ -77,9 +77,7 @@ Now that you know where I stand,back to the main point.
 
 There you go.Thats my **"stack"**.Its not much,heck its nothing apart from a bloggin platform.But I hope to do more.Lesse :).
 
-
-
-
+*EDIT:* I forgot a very important point.This is one of the most robust hosts platform with a lot of integrations possible.The open-source factor makes available so many plugins and services that you can be assured quality SaaS with the only possible repellant being that your data also becomes open source.But considering that I am using everything is in some form taken from that same community,seems fair enough to me.
 
 
 
