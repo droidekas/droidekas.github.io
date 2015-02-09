@@ -12,7 +12,7 @@ destination: serve
 # Same as the title etc for your site but can instead be
 # called by using 'site.author.name' and so on
 author:
-  name: Satyarth
+  name: droidekas
   email: satyarth.23@gmail.com
   bio: Why?
   twitter: droid_ekas
@@ -48,48 +48,32 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
     values:
       actions: 
-        - label: "option1"
-          icon: "ion-edit"
-          link: "#"
-        - label: "option2"
-          icon: "ion-arrow-down-c"
-          link: "#"
-        - label: "option3"
+        - label: "@droidekas"
+          icon: "ion-social-twitter"
+          link: "https://twitter.com/droid_ekas"
+        - label: "Github"
           icon: "ion-social-github"
-          link: "#"
+          link: "https://github.com/droidekas"
+        - label: "Email"
+          icon: "ion-android-mail"
+          link: "mailto:satyarth.23@gmail.com"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
       comments: true
   -
     scope:
       path: ""
       type: "pages"
     values:
-      actions: 
-        - label: "option1"
-          icon: "ion-edit"
-          link: "#"
-        - label: "option2"
-          icon: "ion-arrow-down-c"
-          link: "#"
-        - label: "option3"
-          icon: "ion-social-github"
-          link: "#"
       comments: false
   -
     scope:
       path: ""
       type: "drafts"
     values:
-      actions: 
-       - label: "option1"
-         icon: "ion-edit"
-         link: "#"
-       - abel: "option2"
-         icon: "ion-arrow-down-c"
-         link: "#"
-       - abel: "option3"
-         icon: "ion-social-github"
-         link: "#"
       comments: false

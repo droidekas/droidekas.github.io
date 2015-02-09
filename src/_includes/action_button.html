@@ -2,17 +2,18 @@
 <ul class=" mfb-component--tr mfb-slidein">
   <li class="mfb-component__wrap">
     <a href="#"  class="mfb-component__button--main">
-      <i class="mfb-component__main-icon--resting ion-plus-round"></i>
-      <i class="mfb-component__main-icon--active ion-edit"></i>
+      <i class="mfb-component__main-icon--resting ion-android-contact"></i>
+      <i class="mfb-component__main-icon--active ion-android-happy"></i>
     </a>
     <ul class="mfb-component__list">
       {% for option in page.actions %}
         <li>
-          <a href="{{option.link}}" data-mfb-label="{{option.label}}"
+          <a href="{{option.link}}" data-mfb-label="{{option.label}}" data-mfb-hover-color="blue"
            class="mfb-component__button--child">
             <i class="mfb-component__child-icon {{option.icon}}"></i>
           </a>
         </li>
+
       {% endfor %}
     </ul>
   </li>

@@ -262,10 +262,13 @@ $number-of-child-buttons: 4;
 // the icons for the main button
 .mfb-component__child-icon,
 .mfb-component__child-icon{
-  @extend .mfb-component__icon;  
+
+  @extend .mfb-component__icon;
+
 }
 .mfb-component__main-icon--active{
   opacity: 0;
+  
 }
 .mfb-component:hover{
   .mfb-component__main-icon{
@@ -278,6 +281,12 @@ $number-of-child-buttons: 4;
   .mfb-component__main-icon--active{
     opacity: 1;
   }
+  // .mfb-component__child-icon:hover{
+  //   background-color: blue;
+  //   border: none;
+  //   border-radius: 50%;
+  //   box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  // }
 }
 
 /*------------------------------------*\
