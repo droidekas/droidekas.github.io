@@ -1,7 +1,7 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
 title: My Website
-description: why?
+description: Oops..spilled my coffee.
 tagline: personal
 url: localhost:4000
 
@@ -14,7 +14,7 @@ destination: serve
 author:
   name: droidekas
   email: satyarth.23@gmail.com
-  bio: Oops..spilled my coffee.
+  bio: Summon the droidekas!
   twitter: droid_ekas
 
 # general setting for Jekyll
