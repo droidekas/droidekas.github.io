@@ -102,6 +102,7 @@ $labels-padding-horizontal: 10px;
 
 // how many child buttons does the component have
 $number-of-child-buttons: 4;
+$color-list: $main-color,$main-color,$main-color,$main-color;
 
 /* IMPORT USER-DEFINED OVERRIDES -----*/
 
@@ -281,12 +282,18 @@ $number-of-child-buttons: 4;
   .mfb-component__main-icon--active{
     opacity: 1;
   }
-  // .mfb-component__child-icon:hover{
-  //   background-color: blue;
-  //   border: none;
-  //   border-radius: 50%;
-  //   box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-  // }
+  @for $i from 1 through $number-of-child-buttons{
+  li:nth-of-type(#{$i}){
+    .mfb-component__child-icon:hover{
+      background-color:nth($color-list,$i);
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  }
+ }
+}
+
+
 }
 
 /*------------------------------------*\
@@ -362,6 +369,11 @@ $number-of-child-buttons: 4;
  * This part is where unfinished code should stay.
  * When a feature is ready(sh) move these styles to their proper place.
  */
+
+
+
+
+
 
 
 

@@ -16,6 +16,7 @@ $main-color: #8f5536;
 // aka the white text
 $bright-text: rgba(255, 255, 255, 0.8);
 
+
 /* EFFECTS ---------------------------*/
 
 // which effects must be made available in the css
@@ -53,5 +54,5 @@ $labels-padding-horizontal: 10px;
 
 // how many child buttons does the component have
 $number-of-child-buttons: 3;
-
+$color-list: blue,black,red;
 

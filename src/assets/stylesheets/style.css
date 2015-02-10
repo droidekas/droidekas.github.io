@@ -1151,6 +1151,21 @@ a.pagination-item:hover {
   opacity: 0; }
 .mfb-component:hover .mfb-component__main-icon--active, .mfb-component--tl:hover .mfb-component__main-icon--active, .mfb-component--tr:hover .mfb-component__main-icon--active, .mfb-component--bl:hover .mfb-component__main-icon--active, .mfb-component--br:hover .mfb-component__main-icon--active {
   opacity: 1; }
+.mfb-component:hover li:nth-of-type(1) .mfb-component__child-icon:hover, .mfb-component--tl:hover li:nth-of-type(1) .mfb-component__child-icon:hover, .mfb-component--tr:hover li:nth-of-type(1) .mfb-component__child-icon:hover, .mfb-component--bl:hover li:nth-of-type(1) .mfb-component__child-icon:hover, .mfb-component--br:hover li:nth-of-type(1) .mfb-component__child-icon:hover {
+  background-color: blue;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28); }
+.mfb-component:hover li:nth-of-type(2) .mfb-component__child-icon:hover, .mfb-component--tl:hover li:nth-of-type(2) .mfb-component__child-icon:hover, .mfb-component--tr:hover li:nth-of-type(2) .mfb-component__child-icon:hover, .mfb-component--bl:hover li:nth-of-type(2) .mfb-component__child-icon:hover, .mfb-component--br:hover li:nth-of-type(2) .mfb-component__child-icon:hover {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28); }
+.mfb-component:hover li:nth-of-type(3) .mfb-component__child-icon:hover, .mfb-component--tl:hover li:nth-of-type(3) .mfb-component__child-icon:hover, .mfb-component--tr:hover li:nth-of-type(3) .mfb-component__child-icon:hover, .mfb-component--bl:hover li:nth-of-type(3) .mfb-component__child-icon:hover, .mfb-component--br:hover li:nth-of-type(3) .mfb-component__child-icon:hover {
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28); }
 
 /*------------------------------------*\
     #BUTTONS | Animations
