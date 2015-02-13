@@ -1,8 +1,8 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
-title: My Website
+title: Droidekas
 description: Oops..spilled my coffee.
-tagline: personal
+tagline: are fast… very fast.
 url: localhost:4000
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
