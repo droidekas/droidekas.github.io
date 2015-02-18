@@ -26,7 +26,22 @@ cd into your directory and use
 	gem install travis
 {% endhighlight %}
 
+Now you let it do its thing.And now you need to get an API token for travis to use.There are 2 ways to do this.
+
+The GUI way:
+1. Open the [user settings][2] and the applications sub-menu
+2. Click on generate new token in the Personal access tokens.
+3. The only permission that is needed is the public_repo permission.
+4. Go ahead and generate the token,and make sure you keep it somewhere safe for the time being.
+5. Now go back to your,
+
+
+
+
+
+
 
 
 
 [1]:http://travis-ci.org
+[2]:https://github.com/settings/applications
