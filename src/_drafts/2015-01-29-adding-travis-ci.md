@@ -9,6 +9,7 @@ published: True
 
 So I've been trying to Travis builds to my workflow for the past 2 days.And after 32 + 14 builds I have finally ironed out all issues.All that is left is a slight amount of clean up.
 Its quite direct and simple.
+<!--end-excerpt-->
 
 1. Go to the [travis][1] website.
 2. Login with github credentials

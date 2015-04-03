@@ -1,0 +1,93 @@
+
+
+
+.insetBackground  {
+ height: 80px;
+ background: url('../images/foreground.png') 5% 5%, url('../images/midground.png') 50% 50%, url('../images/background.png') 90% 110%;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ position:absolute;
+    -webkit-transition: right 500s linear;
+    -moz-transition: right 500s linear;
+    -o-transition: right 500s linear;
+    -ms-transition: right 500s linear;
+    transition: right 500s linear;
+ // background: -moz-linear-gradient(-90deg, #003471, #448CCB);
+ // background: -webkit-gradient(linear, left top, left bottom, from(#003471), to(#448CCB));
+}
+.masthead .container h2{
+	position:absolute;
+	line-height: 1;
+	margin-top: 1.5rem;
+	text-align: left;
+	color: rgba(255,255,255,0.5);
+	margin-bottom: 1rem;
+  	font-family: Rockwell, Georgia, "Times New Roman", Times, serif;
+  	font-size: 30px;
+	font-style: italics;
+}
+
+
+html:hover .insetBackground{
+	right:-9999px;
+}
+
+
+
+
+
+
+
+
+
+.sidebar-inset{
+	background-color:rgba(0,0,0,0.0) ;
+}
+
+.inset{
+   	text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+}
+.inset-box{
+	box-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+}
+
+
+.header{
+	margin-left:75px;
+}
+
+.date {
+  float:left;
+  position: relative;
+  width: 70px;
+  font-family: Georgia, serif;
+  color: #999;
+  margin: 0 auto;
+ }
+ 
+.day, .month, .year {
+  position: absolute;
+  }
+ 
+.day { 
+  font-size: 30px;
+  top: 15px;
+  }
+ 
+.month { 
+  top: 0;
+  left: 0;  
+  font-size: 18px;
+  }
+ 
+.year { 
+  top: 19px;
+  right: 0;
+  font-size: 20px;
+  rotation: -90deg !important;
+  /* ** Hacks ** */
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);  
+  }
