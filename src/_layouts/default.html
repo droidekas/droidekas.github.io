@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
   {% include head.html %}
-  <body class="theme-base-0f ">
+  <body class="theme-base-custom ">
     {% include sidebar.html %}
     {% include action_button.html %}
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
     content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
       <div  class="masthead ">
-        <div  id="mastBg" class="insetBackground"></div>
-        <div  class="container">
-          <h2  class="inset">{{site.title}}</h2>
-        </div>
+        <svg class="masthead-title" viewBox="0 0 2700 500">
+          <!-- Symbol -->
+          <symbol id="s-text">
+            <text text-anchor="middle"
+                  x="50%" y="50%" dy=".35em">
+              Droidekas
+            </text>
+          </symbol>  
+          <!-- Duplicate symbols -->
+          <use xlink:href="#s-text" class="text"
+               ></use>
+          <use xlink:href="#s-text" class="text"
+               ></use>
+          <use xlink:href="#s-text" class="text"
+               ></use>
+          <use xlink:href="#s-text" class="text"
+               ></use>
+          <use xlink:href="#s-text" class="text"
+               ></use>
+        </svg>
       </div>
-      
       <div class="container content">
         {{ content }}
         {% include comments.html %}
       </div>
-      
-      
     </div>
     <label for="sidebar-checkbox" class="sidebar-toggle sidebar-inset inset-box"></label>
   </body>

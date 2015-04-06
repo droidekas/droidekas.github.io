@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
 /* 
 The main SCSS file for everything, yep
 */
@@ -617,13 +618,13 @@ h1, h2, h3, h4, h5, h6 {
  * Super small header above the content for site name and short description.
  */
 .masthead {
-  padding-top: 1rem;
+  padding-top: 0rem;
   padding-bottom: 0rem;
-  margin-bottom: 3rem;
+  background-color: #111;
   border-bottom: 1px solid #eee; }
 
 .masthead-title {
-  margin-top: 0;
+  margin-top: 0.25em;
   margin-bottom: 0;
   color: #505050; }
   .masthead-title a {
@@ -944,6 +945,12 @@ a.pagination-item:hover {
 .theme-base-0f .container a, .theme-base-0f .sidebar-toggle, .theme-base-0f .related-posts li a:hover {
   color: #8f5536; }
 
+/*  Custom Themeing */
+.theme-base-custom .sidebar, .theme-base-custom .sidebar-toggle:active, .theme-base-custom #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #f09609; }
+.theme-base-custom .container a, .theme-base-custom .sidebar-toggle, .theme-base-custom .related-posts li a:hover {
+  color: #f09609; }
+
 /**
  * CONTENTS
  *
@@ -1075,7 +1082,7 @@ a.pagination-item:hover {
     #BUTTONS | Base
 \*------------------------------------*/
 .mfb-component__button, .mfb-component__button--main, .mfb-component__button--child {
-  background-color: #8f5536;
+  background-color: #f09609;
   display: inline-block;
   position: relative;
   border: none;
@@ -1616,31 +1623,6 @@ html.mfb-debug * {
   #doc2 .yui-gf div.first {
     width: 12.3%; }
 
-.insetBackground {
-  height: 80px;
-  background: url('../images/foreground.png') 5% 5%, url('../images/midground.png') 50% 50%, url('../images/background.png') 90% 110%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  -webkit-transition: right 500s linear;
-  transition: right 500s linear; }
-
-.masthead .container h2 {
-  position: absolute;
-  line-height: 1;
-  margin-top: 1.5rem;
-  text-align: left;
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 1rem;
-  font-family: Rockwell, Georgia, "Times New Roman", Times, serif;
-  font-size: 30px;
-  font-style: italics; }
-
-html:hover .insetBackground {
-  right: -9999px; }
-
 .sidebar-inset {
   background-color: transparent; }
 
@@ -1681,3 +1663,49 @@ html:hover .insetBackground {
   /* ** Hacks ** */
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg); }
+
+.text {
+  fill: none;
+  stroke-width: 30;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  letter-spacing: 2em;
+  -webkit-animation: stroke 4s infinite linear;
+          animation: stroke 4s infinite linear; }
+  .text:nth-child(5n+1) {
+    stroke: #9400D3;
+    -webkit-animation-delay: -0.8s;
+            animation-delay: -0.8s; }
+  .text:nth-child(5n+2) {
+    stroke: #0000FF;
+    -webkit-animation-delay: -1.6s;
+            animation-delay: -1.6s; }
+  .text:nth-child(5n+3) {
+    stroke: #00FF00;
+    -webkit-animation-delay: -2.4s;
+            animation-delay: -2.4s; }
+  .text:nth-child(5n+4) {
+    stroke: #FF7F00;
+    -webkit-animation-delay: -3.2s;
+            animation-delay: -3.2s; }
+  .text:nth-child(5n+5) {
+    stroke: #FF0000;
+    -webkit-animation-delay: -4s;
+            animation-delay: -4s; }
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400; } }
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400; } }
+
+svg {
+  background-color: #111;
+  position: relative;
+  align: center;
+  width: 100%;
+  height: 100px;
+  font: 5em Open Sans, Impact; }

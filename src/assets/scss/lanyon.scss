@@ -91,14 +91,14 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .masthead {
-  padding-top: 1rem;
-  padding-bottom: 0rem;
-  margin-bottom: 3rem;
+  padding-top: 0rem;
+  padding-bottom:0rem;
+  background-color:#111;
   border-bottom: 1px solid #eee;
 }
 
 .masthead-title {
-  margin-top: 0;
+  margin-top: 0.25em;
   margin-bottom: 0;
   color: #505050;
   a {
@@ -541,6 +541,21 @@ a.pagination-item:hover {
   }
   .container a, .sidebar-toggle, .related-posts li a:hover {
     color: #8f5536;
+  }
+}
+
+
+/*  Custom Themeing */
+
+$custom-theme-color:#f09609;
+
+
+.theme-base-custom {
+  .sidebar, .sidebar-toggle:active, #sidebar-checkbox:checked ~ .sidebar-toggle {
+    background-color: $custom-theme-color;
+  }
+  .container a, .sidebar-toggle, .related-posts li a:hover {
+    color: $custom-theme-color;
   }
 }
 
