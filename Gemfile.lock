@@ -10,6 +10,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    color-generator (0.0.4)
     colorator (0.1)
     execjs (2.2.2)
     fast-stemmer (1.0.2)
@@ -71,6 +72,7 @@ PLATFORMS
 
 DEPENDENCIES
   classifier-reborn
+  color-generator
   fast-stemmer
   jekyll
   kramdown

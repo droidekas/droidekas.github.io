@@ -44,6 +44,7 @@ markdown: kramdown
 #               'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes','emphasis']
 highlighter: true
 
+
 defaults:
   -
     scope:

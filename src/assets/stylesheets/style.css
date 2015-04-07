@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+@import url(http://fonts.googleapis.com/css?family=Lora:400italic);
 /* 
 The main SCSS file for everything, yep
 */
@@ -1623,6 +1624,109 @@ html.mfb-debug * {
   #doc2 .yui-gf div.first {
     width: 12.3%; }
 
+/**
+ * Function defining the difference between 2 colors
+ *
+ * @param {Color} $a - first color
+ * @param {Color} $b - second color
+ *
+ * @return {Map}  The color operations to do in order to find $b from $a where keys are the color functions to apply and values are the values to pass to these functions
+ */
+/**
+ * Compute the diff for each color from the initial palette
+ *
+ * @param {Map} $palette - palette
+ *
+ * @requires {function} color-diff
+ * 
+ * @return {List} list of diffs
+ */
+/**
+ * Initial palette used to define the diff between the base color and each color from the palette. There can be as many colors as one wants.
+ * 
+ * @Link https://ton.twitter.com/i/ton/data/dm/487926326314418176/487926326322823168/8M2k8xOp.png Initial color palette
+ *
+ * @type Map
+ */
+/**
+ * Palette diffs
+ * Same length as colors key from map-palette
+ *
+ * @type List
+ */
+/**
+ * Apply differences returned from `color-diff` function to a color in order to retrieve the second color
+ *
+ * @param {Color} $color - color to transform
+ * @param {Map} $diff - diff map
+ * 
+ * @return {Color} transformed color
+ */
+/**
+ * Create a palette from a base color
+ *
+ * @param {Color} $base-color - base color for the palette
+ *
+ * @requires {function} palette-diff
+ * @requires {function} apply-diff
+ * @requires {variable} $base-palette
+ *
+ * @return {List} list of colors
+ */
+/**
+ * Create a list of colors from the base color
+ * then turn in into a map with explicit keys
+ *
+ * @param {Color} $base-color - base color for the palette
+ *
+ * @requires {function} create-palette
+ *
+ * @return {Map}
+ */
+/**
+ * Create and apply a palette
+ * 
+ * @param {Color} $base-color - base color
+ * 
+ * @requires {function} create-palette
+ */
+.test-1 {
+  background: red;
+  background: -webkit-linear-gradient(left, #98c0ce, #98c0ce 14.28571%, #958d9e 14.28571%, #958d9e 28.57143%, #b65964 28.57143%, #b65964 42.85714%, #ff0000 42.85714%, #ff0000 57.14286%, #812929 57.14286%, #812929 71.42857%, #411515 71.42857%, #411515 85.71429%, #351111 85.71429%, #351111 100%);
+  background: linear-gradient(to right, #98c0ce, #98c0ce 14.28571%, #958d9e 14.28571%, #958d9e 28.57143%, #b65964 28.57143%, #b65964 42.85714%, #ff0000 42.85714%, #ff0000 57.14286%, #812929 57.14286%, #812929 71.42857%, #411515 71.42857%, #411515 85.71429%, #351111 85.71429%, #351111 100%); }
+
+.test-2 {
+  background: tomato;
+  background: -webkit-linear-gradient(left, #c8d9e5, #c8d9e5 14.28571%, #bbb4be 14.28571%, #bbb4be 28.57143%, #cc8c8a 28.57143%, #cc8c8a 42.85714%, #ff6347 42.85714%, #ff6347 57.14286%, #b74d3a 57.14286%, #b74d3a 71.42857%, #773226 71.42857%, #773226 85.71429%, #6b2d22 85.71429%, #6b2d22 100%);
+  background: linear-gradient(to right, #c8d9e5, #c8d9e5 14.28571%, #bbb4be 14.28571%, #bbb4be 28.57143%, #cc8c8a 28.57143%, #cc8c8a 42.85714%, #ff6347 42.85714%, #ff6347 57.14286%, #b74d3a 57.14286%, #b74d3a 71.42857%, #773226 71.42857%, #773226 85.71429%, #6b2d22 85.71429%, #6b2d22 100%); }
+
+.test-3 {
+  background: deepskyblue;
+  background: -webkit-linear-gradient(left, #ceb398, #ceb398 14.28571%, #919e8d 14.28571%, #919e8d 28.57143%, #59aab6 28.57143%, #59aab6 42.85714%, #00bfff 42.85714%, #00bfff 57.14286%, #296b81 57.14286%, #296b81 71.42857%, #153641 71.42857%, #153641 85.71429%, #112c35 85.71429%, #112c35 100%);
+  background: linear-gradient(to right, #ceb398, #ceb398 14.28571%, #919e8d 14.28571%, #919e8d 28.57143%, #59aab6 28.57143%, #59aab6 42.85714%, #00bfff 42.85714%, #00bfff 57.14286%, #296b81 57.14286%, #296b81 71.42857%, #153641 71.42857%, #153641 85.71429%, #112c35 85.71429%, #112c35 100%); }
+
+.test-4 {
+  background: gold;
+  background: -webkit-linear-gradient(left, #9e98ce, #9e98ce 14.28571%, #9e8d98 14.28571%, #9e8d98 28.57143%, #b69c59 28.57143%, #b69c59 42.85714%, #ffd700 42.85714%, #ffd700 57.14286%, #817429 57.14286%, #817429 71.42857%, #413a15 71.42857%, #413a15 85.71429%, #352f11 85.71429%, #352f11 100%);
+  background: linear-gradient(to right, #9e98ce, #9e98ce 14.28571%, #9e8d98 14.28571%, #9e8d98 28.57143%, #b69c59 28.57143%, #b69c59 42.85714%, #ffd700 42.85714%, #ffd700 57.14286%, #817429 57.14286%, #817429 71.42857%, #413a15 71.42857%, #413a15 85.71429%, #352f11 85.71429%, #352f11 100%); }
+
+.test-5 {
+  background: magenta;
+  background: -webkit-linear-gradient(left, #98cea6, #98cea6 14.28571%, #8d969e 14.28571%, #8d969e 28.57143%, #ab59b6 28.57143%, #ab59b6 42.85714%, #ff00ff 42.85714%, #ff00ff 57.14286%, #812981 57.14286%, #812981 71.42857%, #411541 71.42857%, #411541 85.71429%, #351135 85.71429%, #351135 100%);
+  background: linear-gradient(to right, #98cea6, #98cea6 14.28571%, #8d969e 14.28571%, #8d969e 28.57143%, #ab59b6 28.57143%, #ab59b6 42.85714%, #ff00ff 42.85714%, #ff00ff 57.14286%, #812981 57.14286%, #812981 71.42857%, #411541 71.42857%, #411541 85.71429%, #351135 85.71429%, #351135 100%); }
+
+.test-6 {
+  background: silver;
+  background: -webkit-linear-gradient(left, #ecfbfb, #ecfbfb 14.28571%, #b0fcfc 14.28571%, #b0fcfc 28.57143%, #a7e9e9 28.57143%, #a7e9e9 42.85714%, #c0c0c0 42.85714%, #c0c0c0 57.14286%, #63c8c8 57.14286%, #63c8c8 71.42857%, #389f9f 71.42857%, #389f9f 85.71429%, #349393 85.71429%, #349393 100%);
+  background: linear-gradient(to right, #ecfbfb, #ecfbfb 14.28571%, #b0fcfc 14.28571%, #b0fcfc 28.57143%, #a7e9e9 28.57143%, #a7e9e9 42.85714%, #c0c0c0 42.85714%, #c0c0c0 57.14286%, #63c8c8 57.14286%, #63c8c8 71.42857%, #389f9f 71.42857%, #389f9f 85.71429%, #349393 85.71429%, #349393 100%); }
+
+.test {
+  margin: 1em 0;
+  height: 6em; }
+
+.p {
+  text-align: center; }
+
 .sidebar-inset {
   background-color: transparent; }
 
@@ -1709,3 +1813,154 @@ svg {
   width: 100%;
   height: 100px;
   font: 5em Open Sans, Impact; }
+
+/*quote page */
+.quote2 {
+  
+  width: 100%; }
+  .quote2 *, .quote2 *:before, .quote2 *:after {
+    box-sizing: border-box; }
+  .quote2 .outer {
+    display: block;
+    margin: 150px auto 0;
+    max-width: 95%;
+    padding: 20px 0;
+    border: 1px solid #888;
+    border-width: 1px 0;
+    position: relative;
+    background: #fff; }
+  .quote2 .inner {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    position: relative;
+    padding: 0px 40px;
+    margin: 0 -20px;
+    background: #fff;
+    border: 1px solid #888;
+    border-width: 0 1px; }
+  .quote2 .inner p {
+    font-size: 1em;
+    margin: 0 0 1em; }
+  .quote2 .inner footer {
+    display: block;
+    text-align: right; }
+  .quote2 .inner footer a {
+    text-decoration: none;
+    color: #333; }
+  .quote2 .outer:before, .quote2 .outer:after, .quote2 .inner:before, .quote2 .inner:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 20px solid #ffffff;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: inset 0 0 0 1px #888; }
+  .quote2 .outer:before {
+    top: -40px;
+    left: -60px;
+    clip: rect(40px, auto, auto, 40px);
+    /* CSS 2.1 way - deprecated */
+    -webkit-clip-path: rectangle(50%, 50%, 100%, 100%, 0, 0);
+    /* CSS 3 */ }
+  .quote2 .outer:after {
+    top: -40px;
+    right: -59px;
+    clip: rect(40px, 40px, auto, auto);
+    -webkit-clip-path: rectangle(0, 50%, 50%, 100%, 0, 0); }
+  .quote2 .inner:before {
+    bottom: -60px;
+    left: -40px;
+    clip: rect(auto, auto, 40px, 40px);
+    -webkit-clip-path: rectangle(50%, 0, 100%, 50%, 0, 0); }
+  .quote2 .inner:after {
+    bottom: -60px;
+    right: -40px;
+    clip: rect(auto, 40px, 40px, auto);
+    -webkit-clip-path: rectangle(0, 0, 50%, 50%, 0, 0); }
+
+.quote3 {
+  width: 100%; }
+  .quote3 .notepaper {
+    position: relative;
+    margin: 30px auto;
+    padding: 29px 20px 20px 45px;
+    width: 100%;
+    line-height: 30px;
+    color: #6a5f49;
+    text-shadow: 0 1px 1px white;
+    background-color: #f2f6c1;
+    background-image: -webkit-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -webkit-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+    background-image: -o-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -o-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+    border: 1px solid #c3baaa;
+    border-color: rgba(195, 186, 170, 0.9);
+    box-sizing: border-box;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), inset 0 0 5px #d8e071, 0 0 1px rgba(0, 0, 0, 0.1), 0 2px rgba(0, 0, 0, 0.02); }
+  .quote3 .notepaper:before, .quote3 .notepaper:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0; }
+  .quote3 .notepaper:before {
+    left: 28px;
+    width: 2px;
+    border: solid #efcfad;
+    border-color: rgba(239, 207, 173, 0.9);
+    border-width: 0 1px; }
+  .quote3 .notepaper:after {
+    z-index: -1;
+    left: 0;
+    right: 0;
+    background: rgba(242, 246, 193, 0.9);
+    border: 1px solid rgba(170, 157, 134, 0.7);
+    -webkit-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg); }
+  .quote3 .quote {
+    font-family: Georgia, serif;
+    font-size: 1em; }
+  .quote3 .curly-quotes:before, .quote3 .curly-quotes:after {
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    line-height: 48px;
+    font-size: 50px;
+    opacity: .2; }
+  .quote3 .curly-quotes:before {
+    content: '\201C';
+    margin-right: 4px;
+    margin-left: -8px; }
+  .quote3 .curly-quotes:after {
+    content: '\201D';
+    margin-left: 4px;
+    margin-right: -8px; }
+  .quote3 .quote-by {
+    display: block;
+    padding-right: 10px;
+    text-align: right;
+    font-size: 0.8em;
+    font-style: italic;
+    color: #84775c; }
+  .quote3 .lt-ie8 .notepaper {
+    padding: 15px 25px; }
+
+.quote3:nth-child(7n+1) {
+  background: #989dce; }
+
+.quote3:nth-child(7n+2) {
+  background: #9e8d9b; }
+
+.quote3:nth-child(7n+3) {
+  background: #b68a59; }
+
+.quote3:nth-child(7n+4) {
+  background: orange; }
+
+.quote3:nth-child(7n+5) {
+  background: #816229; }
+
+.quote3:nth-child(7n+6) {
+  background: #413215; }
+
+.quote3:nth-child(7n+7) {
+  background: #352811; }

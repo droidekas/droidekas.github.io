@@ -2,5 +2,20 @@
 layout: page
 title: Quotes
 ---
+
 <div class="quote-list">
+
+
+{% for quote in site.data.quoteList %}
+<div class="quote3" >
+<div class="notepaper">
+  <figure class="quote">
+    <blockquote class="curly-quotes" >
+      {{quote.quoteText}}
+    </blockquote>
+    <figcaption class="quote-by">— {% if quote.author != ''%}{{quote.author}}{% else %} {{'Anonymous'}}{% endif %}</figcaption>
+  </figure>
+</div>
+</div>
+{% endfor %}
 </div>
