@@ -6,9 +6,16 @@
     {% include action_button.html %}
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
     content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
+    <div class="wrap ">
+    <div class="parallax">
+    <div class="parallax__group">
+      
+      
       <div  class="masthead ">
-        <svg class="masthead-title" viewBox="0 0 2700 500">
+      
+      <div class="masthead-title">
+      <div class="parallax__layer parallax__layer--back">
+        <svg  viewBox="0 0 2700 500">
           <!-- Symbol -->
           <symbol id="s-text">
             <text text-anchor="middle"
@@ -28,11 +35,15 @@
           <use xlink:href="#s-text" class="text"
                ></use>
         </svg>
+        </div>
+        </div>
       </div>
-      <div class="container content">
+      <div class="container content parallax__layer parallax__layer--fore">
         {{ content }}
         {% include comments.html %}
       </div>
+    </div>
+    </div>
     </div>
     <label for="sidebar-checkbox" class="sidebar-toggle sidebar-inset inset-box"></label>
   </body>

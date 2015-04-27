@@ -1806,13 +1806,63 @@ html.mfb-debug * {
   100% {
     stroke-dashoffset: -400; } }
 
+.masthead-title {
+  background-color: #111; }
+
 svg {
-  background-color: #111;
   position: relative;
   align: center;
   width: 100%;
   height: 100px;
   font: 5em Open Sans, Impact; }
+
+.parallax {
+  height: 500px;
+  /* fallback for older browsers */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px; }
+
+.parallax__group {
+  position: relative;
+  height: 500px;
+  /* fallback for older browsers */
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.7);
+  z-index: 1;
+  margin-top: 150px; }
+
+.parallax__layer--base {
+  background-color: #111;
+  height: 100px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4; }
+
+.parallax__layer--back {
+  background-color: #111;
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 4; }
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2; }
 
 /*quote page */
 .quote2 {
@@ -1943,24 +1993,3 @@ svg {
     color: #84775c; }
   .quote3 .lt-ie8 .notepaper {
     padding: 15px 25px; }
-
-.quote3:nth-child(7n+1) {
-  background: #989dce; }
-
-.quote3:nth-child(7n+2) {
-  background: #9e8d9b; }
-
-.quote3:nth-child(7n+3) {
-  background: #b68a59; }
-
-.quote3:nth-child(7n+4) {
-  background: orange; }
-
-.quote3:nth-child(7n+5) {
-  background: #816229; }
-
-.quote3:nth-child(7n+6) {
-  background: #413215; }
-
-.quote3:nth-child(7n+7) {
-  background: #352811; }
