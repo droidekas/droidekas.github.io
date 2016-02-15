@@ -1,0 +1,9 @@
+---
+layout: post
+section-type: post
+title: "Repost"
+category: random
+tags: [ 'random' ]
+---
+
+This would be my second attempt on a blog.The first went well.I managed to set up Travis and gulp and whole thing-ma-jig with it.But then that's it.It took me eons to write my first post and then the next.Something I realised was that in order to make something a habit ,you have to make sure that its as easily excutable as possible.So this is my second attempt.Hopefully a more regular habit.

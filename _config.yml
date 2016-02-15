@@ -1,67 +1,81 @@
-# Site settings
+title:            Site Title
+description:      Describe your website here.
+disqus_shortname: 
+reading_time:     true
+words_per_minute: 200
+# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+url:
 
-url: "http://droidekas.github.io"
-title: "{ An-other-Droid }"
-description: "Blog of Satyarth Sampath."
-# keywords: ""
-favicon: "/img/favicon.ico"
-black-favicon: "/img/black-lab-glass.ico"
-google-tracking-id: "UA-66734143-1"
-disqus-shortname: "droidekasgithubio"
+# Owner/author information
+owner:
+  name:           Your Name
+  avatar:         avatar.jpg
+  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  email:          you@email.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        
+  facebook:       
+  github:         
+  stackexchange:  
+  linkedin:       
+  instagram:      
+  flickr:         
+  tumblr:         
+  # google plus id, include the '+', eg +mmistakes
+  google_plus:
 
-# Navigation bar links
-# Blog link in the blog and post pages will point to the blog.html#blog
-# In the default page it will point to the preview of the last post
+# Background image to be tiled on all pages
+background: 
 
-pages_list:
-  About: 'about'
-  Blog: 'blog'
-  Career: 'career'
-  Contact: 'contact'
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
 
-background-img: "/img/intro-bg.jpg"
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      true
+highlighter: rouge
+markdown:    kramdown
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+sass:
+  sass_dir: _sass
+  style: compressed
 
-# About variables
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
 
-me-img: "/img/me.png"
+# Amount of post to show on home page
+paginate: 5
 
-# Blog variables
-paginate: 15
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
-paginate_path: "blog/page:num"
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
 
-post-preview-words: 128
+# Octopress
+# Default extensions
+post_ext: md
+page_ext: md
+# Found in _templates/
+post_layout: post
+page_layout: page
+# Format titles with titlecase?
+titlecase: true
 
-fb-share: True
-twitter-share: True
-reddit-share: True
-
-# Career variables
-
-events:
-  - image: "/img/career/wooplr.png"
-    date: "May 2015 - Today"
-    description: "Software Engineer @ <a href=\"http://wooplr.com\">Wooplr</a> on the <a href=\"https://play.google.com/store/apps/details?id=com.app.wooplr\">Android app</a>"
-  - image: "/img/career/sony.jpg"
-    date: "August 2013 - May 2015"
-    description: "Software Engineer @ Sony India Software Center"
-  - image: "/img/career/nitk.jpg"
-    date: "July 2009 - May 2013"
-    description: "Bachelor studies @ <a href=\"http://www.nitk.ac.in\" target=\"_blank\">Department of Electrical and Electronics</a>"
-
-# First image of the Career timeline
-career-img: "/img/career/default.jpg"
-
-# Social networks variables (many more available: facebook, flickr, dribbble, pinterest, instagram, tumblr etc.)
-social:
-  - title: "rss"
-    url: "/feed.xml"
-  - title: "github"
-    url: "https://github.com/droidekas"
-  - title: "twitter"
-    url: "https://twitter.com/droid_ekas"
-
-404-img: "/img/labtocat.png"
-
-# Exclusion list from the generated _site
-exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
