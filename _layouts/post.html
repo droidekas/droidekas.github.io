@@ -1,46 +1,49 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Post Layout Start -->
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
 
   {% include head.html %}
 
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <body>
 
-  {% include navigation.html %}
+    {% include navigation.html %}
 
-  <section id="{{ page.title }}" class="container content-section text-center">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
+    <section id="post" class="container content-section text-center">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
 
-        <h1><strong>{{ page.title }}</strong></h1>
-      	<h4><strong>{{ page.date | date_to_string }}</strong>
-          <small> . {{ page.category }} . <a href="{{ page.url }}#disqus_thread">Comments</a><p/>
-          {% for tag in page.tags %}
-            <a href="/tags/{{ tag }}.html">#{{ tag }}</a>
-          {% endfor %}
-          </small>
-        </h4>
+          {% include swipe-instructions.html %}
 
-      	{{ page.content | markdownify }}
+          <h1><strong>{{ page.title }}</strong></h1>
+          <h4><strong>{{ page.date | date_to_string }}</strong>
+            <small> . {{ page.category }} . <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comments</a>
+            {% for tag in page.tags %}
+              <a href="{{site.baseurl}}/tags/{{tag}}.html">#{{ tag }}</a>
+            {% endfor %}
+            </small>
+          </h4>
 
-      	{% include share.html %}
+          {{ page.content | markdownify }}
 
-        {% include comments.html %}
+          {% include share.html %}
 
+          {% if jekyll.environment == "production" %}
+            {% include comments.html %}
+          {% endif %}
+
+          {% include social-buttons.html %}
+
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="{{ page.title }}" class="container content-section text-center">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-	{% include social-buttons.html %}
-      </div>
-    </div>
-  </section>
+    {% include footer.html %}
 
-  {% include footer.html %}
-
-  {% include js.html %}
+    {% include js.html %}
 
   </body>
 </html>
+
+<!-- Post Layout End -->
