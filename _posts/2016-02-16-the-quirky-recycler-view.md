@@ -33,7 +33,8 @@ Why can we not stand still for a while?It is not something as complicated as
 
 {% highlight java %}
 
-public Life calculateFuturePlans(String currentGoal,String goal2017,String goal2018,Object parents,Object family,Object finances,Object theHouseIWant  );
+public Life calculateFuturePlans(String currentGoal,String goal2017,String goal2018,Object parents,
+Object family,Object finances,Object theHouseIWant  );
 
 {% endhighlight %}
 

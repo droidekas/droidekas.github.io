@@ -32,9 +32,9 @@ lang: "en"
 author: "Droidekas"
 title: "{ An-other-Droid }"
 description: "Blog of Satyarth Sampath."
-keywords: "smith, jones, personal, jekyll, theme"
+keywords: "satyarth,sampath,droidekas,android,"
 favicon: "/img/favicon.ico"
-404-img: "/img/labtocat.png"
+# 404-img: "/img/labtocat.png"
 black-favicon: "/img/black-lab-glass.ico"
 google-tracking-id: "UA-66734143-1"
 
@@ -89,14 +89,14 @@ paginate: 5
 
 email-share: False
 fb-share: False
-twitter-share: True
-linkedin-share: True
-reddit-share: True
+twitter-share: False
+linkedin-share: False
+reddit-share: False
 google-plus-share: False
-tumblr-share: True
-pinterest-share: True
-pocket-share: True
-vkontakte-share: True
+tumblr-share: False
+pinterest-share: False
+pocket-share: False
+vkontakte-share: False
 disqus-shortname: "droidekasgithubio"
 
 syntax-highlight: True
@@ -154,8 +154,8 @@ social:
 # Sections shown in the index page
 
 pages_list:
-  About: 'about'
   Blog: 'latest-post'
+  About: 'about'
   Timeline: 'timeline'
   Contact: 'contact'
 
