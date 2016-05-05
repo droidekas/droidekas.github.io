@@ -45,13 +45,13 @@ google-tracking-id: "UA-66734143-1"
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: "../img/intro-bg.jpg"
+background-img: "#000000"
 
 ##############################
 # Dynamic Text on the Header #
 ##############################
 
-dynamic-typing: True
+dynamic-typing: False
 shuffle: True # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
@@ -87,12 +87,12 @@ post-preview-words: 96
 
 paginate: 5
 
-email-share: True
-fb-share: True
+email-share: False
+fb-share: False
 twitter-share: True
 linkedin-share: True
 reddit-share: True
-google-plus-share: True
+google-plus-share: False
 tumblr-share: True
 pinterest-share: True
 pocket-share: True
@@ -125,7 +125,7 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-email: "your@email.here"
+email: "satyarth.23@gmail.com"
 
 ##################
 # Social Buttons #
@@ -133,7 +133,7 @@ email: "your@email.here"
 
 social:
   - title: "facebook"
-    url: "https://facebook.com/"
+    url: "https://www.facebook.com/satyarth.23"
   - title: "github"
     url: "https://github.com/droidekas"
   - title: "twitter"
