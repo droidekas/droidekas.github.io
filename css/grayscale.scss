@@ -228,7 +228,11 @@ a {
         padding-top: 125px;
     }
     .post-details{
-        text-align: left; 
+        display:inline-block;
+        width:80%;
+        text-align: left;
+        vertical-align: middle;
+        justify-content: center; 
     }
     /* Added in { Personal } for responsive images in posts and section contents */
     img {
