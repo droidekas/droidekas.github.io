@@ -44,7 +44,7 @@ to learn commands too.
 It did take a while to setup a good interface so what I would suggest is to take
 up a good starting point.It is much easier to tinker emacs configurations
 instead of creating one by yourself.Since I started using emacs to learn
-Clojure[^1],I used the setup from the [emacs-for-clojure][4].It setup all the
+Clojure[^1],I used the setup from the [emacs-for-clojure][4][^2].It setup all the
 package sources,basic editing functionalities and also takes care of a few edge
 cases when you try using ageless software like emacs for the  gui-dependent
 techies of today(I still belong to that group btw).So while the clojure learning
@@ -72,5 +72,9 @@ traveller.Nothing makes you feel at home in a new System like a personalised
 [3]:https://www.emacswiki.org/emacs/Evil
 [4]:https://github.com/flyingmachine/emacs-for-clojure
 [5]:https://github.com/droidekas/dot-files
+[6]:https://github.com/xiaohanyu/oh-my-emacs
+[7]:https://github.com/eschulte/emacs24-starter-kit
+[8]:https://github.com/bbatsov/prelude
 
 [^1]:I actually had installed emacs to learn Lisp,and then moved on to Clojure which I swear to the gods that I shall complete.
+[^2]:There are several other options for this:[oh-my-emacs][6],[emacs24-starter-kit][7],[prelude][8]
