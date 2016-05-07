@@ -24,7 +24,7 @@ Try to derive arguments from parameters that already exist
 Ex.
 
 
-{% highlight  %}
+{% highlight java %}
 
 public boolean iNeedViewAndContext(View v,Context c){
   //Do stuff
@@ -35,7 +35,7 @@ public boolean iNeedViewAndContext(View v,Context c){
 
 can be written as
 
-{% highlight %}
+{% highlight java %}
 
 public boolean iNeedViewAndContext(View v){
     Context c = v.getContext();
