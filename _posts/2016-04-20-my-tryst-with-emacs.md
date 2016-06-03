@@ -6,11 +6,9 @@ category : tech
 tags : ['emacs','dot-file']
 ---
 
-I've always been fascinated with emacs as an editor.I have always been a
-keyboard person.The first I would do on any system is set up as many
-keyboard shortcuts as possible.The general tendency while saving a file is 
+I’ve always been fascinated with emacs as an editor. I have always been a keyboard person. The first I would do on any system is set up as many keyboard shortcuts as possible. The general tendency while saving a file is
 
- -	<kbd>Cmd</kbd> +<kbd>Alt</kbd> +<kbd>L</kbd> (A couple of times)
+ -  <kbd>Cmd</kbd> +<kbd>Alt</kbd> +<kbd>L</kbd> (A couple of times)
  -  <kbd>Cmd</kbd> +<kbd>S</kbd>
  -  <kbd>Cmd</kbd> +<kbd>Alt</kbd> +<kbd>L</kbd> 
 
