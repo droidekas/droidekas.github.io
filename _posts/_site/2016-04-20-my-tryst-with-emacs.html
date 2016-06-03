@@ -1,0 +1,71 @@
+<p>I’ve always been fascinated with emacs as an editor.I have always been a
+keyboard person.The first I would do on any system is set up as many
+keyboard shortcuts as possible.The general tendency while saving a file is</p>
+
+<ul>
+  <li><kbd>Cmd</kbd> +<kbd>Alt</kbd> +<kbd>L</kbd> (A couple of times)</li>
+  <li><kbd>Cmd</kbd> +<kbd>S</kbd></li>
+  <li><kbd>Cmd</kbd> +<kbd>Alt</kbd> +<kbd>L</kbd></li>
+</ul>
+
+<p>But that is everyone’s tendency.I assume that the Mouse and a Laptop
+have a very unequal love story.But the <em>Magic Trackpad</em><sup>TM</sup>
+is something I could get used to.</p>
+
+<p>Emacs <em>apparently</em> comes in several flavours.Apparently being the
+keyword here.<a href="http://stackoverflow.com/questions/1430164/differences-between-emacs-and-vim">This StackOverflow thread</a> covers that topic
+adequately.Being the procrastinator and inqusitive kind I
+tried several of them(Aquamacs,Spacemacs,Emacs,CarbonEmacs).
+But I stuck to Emacs.I can say the single most influencing
+factor was this chart from the same SO thread.</p>
+
+<p><img src="/img/posts/text_editor_charts.jpg" alt="TextEditorChart" /></p>
+
+<p>I always try to learn things which have a spiral learning curve.
+It makes the learning experience so frustrating and diverse and fun
+that you end up learning a lot more ways of not doing things than doing them.</p>
+
+<p>I uses Gnu Emacs from <a href="https://emacsformacosx.com/">emacsformacosx</a>.Vanilla projects are so much more fun
+ than heavily moded versions.For those vim to emacs converts there also is the
+ <a href="https://www.emacswiki.org/emacs/Evil">Emacs Evil mode</a> which provides vi shortcuts.</p>
+
+<p>I went for the usual pilgrimage; Download emacs -&gt; Google “Basic emacs tutorials
+and beginner plugins”.Google informs me that my best friend is <kbd>C-h</kbd>.It
+indeed was.Emacs has a brilliant guide with appropriate links that makes it easy
+to learn commands too.</p>
+
+<p>It did take a while to setup a good interface so what I would suggest is to take
+up a good starting point.It is much easier to tinker emacs configurations
+instead of creating one by yourself.Since I started using emacs to learn
+Clojure<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>,I used the setup from the <a href="https://github.com/flyingmachine/emacs-for-clojure">emacs-for-clojure</a><sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.It setup all the
+package sources,basic editing functionalities and also takes care of a few edge
+cases when you try using ageless software like emacs for the  gui-dependent
+techies of today(I still belong to that group btw).So while the clojure learning
+spree did not stick,emacs did.</p>
+
+<p>You see ,you cannot possibly perceive the advantages of a terminal editor till
+you start working on remote systems.That started when took up the task of
+setting up CI servers and fiddling around with a Raspberry Pi.You can setup a
+git repo with your dot-files (.emacs.d) in this case which makes setting up your
+environment a breeze. Consider this like the trusty backpack of a frequent
+traveller.Nothing makes you feel at home in a new System like a personalised
+ set of dot-files.<a href="https://github.com/droidekas/dot-files">Mine</a> currents consists only of emacs because I am trying
+ to figure out a way to automate package installs with the same.</p>
+
+<p>Another fascination that I have with emacs is how all text editors now days are
+ basically reinventing features of vi,emacs etc.Built in
+ REPLs,VCS,distraction-free-mode ,multi cursor support ; all are features which
+ are immensely customizable in these timeless editors.The next project was
+ setting up mail in emacs which well,was a pain and I did not stick to it.But
+ the setup process was amazingly cool.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>I actually had installed emacs to learn Lisp,and then moved on to Clojure which I swear to the gods that I shall complete. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>There are several other options for this:<a href="https://github.com/xiaohanyu/oh-my-emacs">oh-my-emacs</a>,<a href="https://github.com/eschulte/emacs24-starter-kit">emacs24-starter-kit</a>,<a href="https://github.com/bbatsov/prelude">prelude</a> <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
