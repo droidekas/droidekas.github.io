@@ -15,11 +15,13 @@ too new.All you have to do is setup your groovy path and add the following to
 you config files:
 
 
-(% highlight bash %}
-devtools(){
-    groovy /path/to/repo $*
-}
-{% endhighlight %}
+(% highlight sh %}
+
+   devtools(){
+         groovy /path/to/repo $*
+   }
+   
+{%endhighlight%}
 
 
 ##Toggle Charging:
@@ -30,6 +32,7 @@ Toggle charging mode for my Device(One Plus One)
        - xda should be able to give you the location of the charging_enabled file on your device.
 
 What you can do right now?
+
  - Clear cache and data for any app  `devtools clear <app-package-name>`
  - Launch any app `devtools launch <app-package-name>`
  - Provide the deeplink intent to an app `devtools deeplink <deeplink>`
