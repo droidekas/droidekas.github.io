@@ -1,5 +1,6 @@
 ---
 title: The Misinformation rant
+layout: post
 section-type: post
 category: random
 tags: [ 'random','internet','information' ]
