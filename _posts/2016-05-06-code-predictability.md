@@ -1,7 +1,7 @@
 ---
 title: Code Predictability
 layout: post
-section: post
+section-type: post
 category: tech
 tags: ["tech","writing","code","java"]
 ---
